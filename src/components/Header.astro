@@ -344,30 +344,7 @@ import navData from "../data/navData.json";
     }
   }
 
-  /* Dark Mode (Mobile) */
-  @media only screen and (max-width: 63.9375rem) {
-    body.dark-mode {
-      #cs-navigation {
-        background-color: var(--dark);
-
-        .cs-logo {
-          filter: grayscale(1) brightness(1000%);
-        }
-
-        .cs-line {
-          background-color: #fff;
-        }
-
-        .cs-ul-wrapper {
-          background-color: var(--medium);
-        }
-
-        .cs-li-link {
-          color: var(--bodyTextColorWhite);
-        }
-      }
-    }
-  }
+ 
 
   /*-- -------------------------- -->
   <---     Desktop Navigation     -->
@@ -471,24 +448,5 @@ import navData from "../data/navData.json";
     }
   }
 
-  /* Dark Mode (Desktop) */
-  @media only screen and (min-width: 64rem) {
-    body.dark-mode {
-      #cs-navigation {
-        background-color: var(--dark);
-
-        .cs-logo {
-          filter: grayscale(1) brightness(1000%);
-        }
-
-        .cs-li-link {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-li-link:before {
-          background-color: var(--primaryLight);
-        }
-      }
-    }
-  }
+  
 </style>
