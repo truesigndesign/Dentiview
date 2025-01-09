@@ -9,1593 +9,1762 @@ const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
 <BaseLayout
-  title="Pixel Perfect Websites"
-  description="Meta description for the page"
+  title="DentiView"
+  description="North London Dental Care"
   preloadedImage = {optimizedImage}
 >
-  <!-- ============================================ -->
-  <!--                    Hero                      -->
-  <!-- ============================================ -->
 
-  <section id="hero">
-    <div class="cs-container">
-      <div class="cs-flex-group">
-        <span class="cs-topper">Starter Kit</span>
-        <h1 class="cs-title">Beginner Astro v4 Starter Kit</h1>
-        <p class="cs-text">
-          This beginner kit includes a pre-configured Astro environment, which
-allows for repeated components, centralized data and greater room to scale as your clients grow. The kit runs the latest major Astro version, v4.
-        </p>
-        <a href="/about" class="cs-button-solid">Explore More</a>
-        <a href="/contact" class="cs-button-transparent">
-          <img
-            class="cs-img"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-            alt="play icon"
-            width="17"
-            height="17"
-          />
-          Get in Touch
-        </a>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2041">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Dental Care for Everyone</span>
+          <h1 class="cs-title">We Provide Dental Services and Surgery</h1>
+          <p class="cs-text">From preventative care to restorative dentistry, our team is dedicated to providing the best possible dental care for you.</p>
+          <a href="#services-1975" class="cs-button-solid">Get Started</a>
+          <!--Bottom Corners-->
       </div>
-    </div>
+      <form class="cs-form" id="cs-form-2041" name="Landing Form">
+          <label class="cs-label">
+              <div class="cs-flex">
+                  Email <span class="span cs-color">*</span>
+              </div>
+              <input class="cs-input" required type="text" id="email-2041" name="email" placeholder="Your email">
+          </label>
+          <label class="cs-label">
+              <div class="cs-flex">
+                  Phone <span class="span cs-color">*</span>
+              </div>
+              <input class="cs-input" required type="tel" id="phone-2041" name="phone" placeholder="Phone number">
+          </label>
+          <label class="cs-label">
+              <div class="cs-flex">
+                  Date <span class="span cs-color">*</span>
+              </div>
+              <input class="cs-input" required type="date" id="date-2041" name="date" placeholder="Choose a date">
+          </label>
+          <button class="cs-button-solid cs-submit">Contact</button>
+      </form>
+  </div>
 
-    <!-- Background Image -->
-    <picture class="cs-picture">
-      <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
-      />
-      <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
-      <img
-        aria-hidden="true"
-        decoding="async"
-        src={optimizedImage.src}
-        alt="new home"
-        width="2500"
-        height="1667"
-        loading="eager"
-      />
-    </picture>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                  Services                    -->
-  <!-- ============================================ -->
-
-  <section id="services" class="services">
-    <!-- Get Icons From flaticon.com -->
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service1.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 1</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service2.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 2</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service3.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 3</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                 Side By Side                 -->
-  <!-- ============================================ -->
-
-  <section id="sbs">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">About Us</span>
-        <h2 class="cs-title">About Company Title</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
-            consequat tincidunt turpis sit amet imperdiet for mind.
-          </p>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
-          <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
-          />
-        </div>
-        <a href="/about" class="cs-button-solid">More About Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--            Extra Content To Rank             -->
-  <!-- ============================================ -->
-
-  <section id="sbs-r">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">SEO Ranking</span>
-        <h2 class="cs-title">Talk about a main service keyword</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur,
-          iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi
-          fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores
-          ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo
-          quia neque est quas, in placeat. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus modi laudantium voluptatibus
-          rem libero error minus quia eligendi sapiente eos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                   Gallery                    -->
-  <!-- ============================================ -->
-
-  <section id="gallery">
-    <div class="cs-container">
-      <span class="cs-topper">Our Portfolio</span>
-      <h2 class="cs-title">
-        Et orci volutpat, back up generator installations
-      </h2>
-      <div class="cs-image-group">
-        <!-- Row 1-->
-        <div class="cs-row cs-row-1">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-        <!-- Row 2 -->
-        <div class="cs-row cs-row-2">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-        <!-- Row 3 -->
-        <div class="cs-row cs-row-3">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-      </div>
-      <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                   Reviews                    -->
-  <!-- ============================================ -->
-
-  <section id="reviews">
-    <div class="cs-container">
-      <span class="cs-topper">Our Reviews</span>
-      <h2 class="cs-title">Words From Our Customers</h2>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
-        volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida
-        viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
-        ornare. Lorem ipsum dolor sit amet.
-      </p>
-      <ul class="cs-card-group">
-        <!-- Review 1 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jon Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-        <!-- Review 2 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jane Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-      </ul>
-      <a aria-label="read more reviews" href="/reviews" class="cs-button-solid"
-        >Our Reviews</a
-      >
-    </div>
-  </section>
-
-  <CTA />
-</BaseLayout>
-
-<style lang="less">
-  /* STYLES FOR ABOVE THE FOLD */
+  <!-- Background Image -->
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dental-hero.png">
+      <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dental-hero.png">
+      <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dental-hero.png" alt="meeting" width="1920" height="1200" aria-hidden="true">
+  </picture>
+</section>
+                              
+<style>
 
   /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #hero {
-      font-family: "Roboto", "Arial", sans-serif;
-      /* Centers button */
-      text-align: center;
-      /* changes on tablet */
-      padding: 0 (16/16rem);
-      padding-bottom: (100/16rem);
-      position: relative;
-      z-index: 1;
-      /* prevents overflow from the lines extending past the screen width */
-      overflow: hidden;
-
-      .cs-picture {
-        /* Background Image */
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-
-        &:before {
-          /* Black Color Overlay */
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: #000;
-          opacity: 0.7;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          /* prevents the cursor from interacting with it */
-          pointer-events: none;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          /* Makes image act like a background-image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16em);
-        margin: auto;
-        /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-        /* 144px - 280px - leaving extra space for the navigation */
-        /* changes on tablet */
-        padding: clamp(9em, 25.95vw, 17.5em) 0;
-        position: relative;
-
-        &:before {
-          /* Left Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-flex-group {
-        width: 80vw;
-        /* 464px - 562px */
-        max-width: clamp(29em, 60vw, 35.125em);
-        margin: auto;
-        /* 60px - 220px */
-        margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-        color: var(--primary);
-      }
-
-      .cs-title {
-        text-align: center;
-        width: 100%;
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-text {
-        text-align: center;
-        /* 32px - 40px */
-        margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-        /* 40px - 48px */
-        margin-bottom: clamp(2.5rem, 4vw, 3rem);
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-button-solid {
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        height: initial;
-        margin-bottom: calc(16 / 16 * 1rem);
-      }
-
-      .cs-button-transparent {
-        font-size: (16/16rem);
-        font-weight: 700;
-        /* 46px - 56px */
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        text-decoration: none;
-        width: (180/16rem);
-        /* 46px - 56px */
-        height: clamp(2.875em, 5.5vw, 3.5em);
-        margin: 0 (8/16rem);
-        box-sizing: border-box;
-        padding: 0;
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid var(--bodyTextColorWhite);
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-
-        &:before {
-          content: "";
-          background: #000;
-          opacity: 1;
-          display: block;
-          position: absolute;
-          /* so it sits on top of the border */
-          top: -1px;
-          right: -1px;
-          bottom: -1px;
-          left: -1px;
-          z-index: -1;
-          /* this is what creates the grow affect on hover */
-          transform: scaleX(0);
-          transition: transform 0.3s;
-          transform-origin: left;
-        }
-
-        &:hover {
-          &:before {
-            transform: scaleX(1);
-          }
-        }
-
-        .cs-img {
-          margin-right: (12/16rem);
-          display: block;
-        }
-      }
-    }
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-2041 {
+    /* 200px - 300px - top leaving extra space for the navigation */
+    /* 60px - 100px bottom */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
-
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #hero {
-      /* 32px - 40px */
-      padding: 0 clamp(2em, 5vw, 2.5em);
-
-      .cs-container {
-        padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
-        &:after {
-          /* Right Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      }
-
-      .cs-button-solid {
-        margin-right: (20/16rem);
-        margin-bottom: 0;
-      }
-    }
+  #hero-2041 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 60px - 180px */
+    gap: clamp(3.75rem, 13vw, 11.25rem);
   }
-
-  /* Desktop Parallax Effect - 1300px */
-  @media only screen and (min-width: 81.25em) {
-    #hero {
-      background: url("/assets/images/landing.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* creates parallax effect on background image */
-      background-attachment: fixed;
-    }
+  #hero-2041 .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 53.125rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
   }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #hero {
-        .cs-background {
-          &:before {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
+  #hero-2041 .cs-topper {
+    line-height: 1em;
+    padding: 0.25rem 1rem;
+    
+    color: var(--primary);
+    border-radius: 0.25rem;
+    position: relative;
+    z-index: 1;
   }
-
-  /*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-
-  /* Mobile */
-  @media only screen and (min-width: 0em) {
-    .services {
-      width: 90%;
-      max-width: (1320/16em);
-      margin: auto;
-      margin-top: (-167/16em);
-      margin-bottom: (50/16em);
-      padding: (50/16em) (20/16em);
-      background: #fff;
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-      border-top: (6/16em) solid var(--primary);
-      border-radius: (5/16em);
-      position: relative;
-      z-index: 100;
-      .card {
-        width: 100%;
-        max-width: (357/16em);
-        margin: auto;
-        margin-bottom: (50/16em);
-        display: block;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-
-        picture {
-          width: (88/16em);
-          height: (88/16em);
-          margin: auto;
-          margin-bottom: (23/16em);
-          background: var(--primary);
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            width: (48/16em);
-            height: (48/16em);
-          }
-        }
-        h2 {
-          font-size: (32/16em);
-          font-weight: 700;
-          line-height: 27/20em;
-          text-align: center;
-          margin-bottom: 13/20em;
-          color: #1a1a1a;
-        }
-        p {
-          line-height: 24/18em;
-          text-align: center;
-          width: 100%;
-          opacity: 0.7;
-        }
-      }
-    }
+  #hero-2041 .cs-topper:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-
-  /* Inbetween */
-  @media only screen and (min-width: 768px) {
-    .services {
-      font-size: ~"min(1.8vw, 1em)";
-      width: 98%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .card {
-        max-width: (325/16em);
-        margin: 0;
-      }
-    }
+  #hero-2041 .cs-title {
+    /* 39px - 80px */
+    font-size: clamp(2.4375rem, 6vw, 5rem);
+    max-width: 20ch;
+    color: var(--bodyTextColorWhite);
   }
-
-  /* Large Desktop */
-  @media only screen and (min-width: 1300px) {
-    .services {
-      padding: (50/16em) (80/16em);
-
-      .card {
-        max-width: (357/16em);
-      }
-    }
+  #hero-2041 .cs-text {
+    max-width: 35.25rem;
+    margin-bottom: 2rem;
+    color: var(--bodyTextColorWhite);
   }
-
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #services {
-        background: var(--medium);
-
-        picture {
-          background: var(--primaryDark);
-        }
-
-        h2 {
-          font-weight: bold;
-          color: #fff;
-        }
-      }
-    }
+  #hero-2041 .cs-button-solid {
+    
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    max-width: 11.25rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #edc181;
+    overflow: hidden;
+    color: var(--bodyTextColorWhite);
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    
   }
-
-  /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
-
-  /*-- -------------------------- -->
-<---       Side By Side         -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs {
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        left: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        right: 0;
-        bottom: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-
-        &:last-of-type {
-          margin-bottom: (32/16rem);
-        }
-      }
-
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
-      }
-
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-
-      .cs-button-solid {
-        margin-top: (32/16rem);
-      }
-    }
+  #hero-2041 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
   }
-
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
-
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
+  #hero-2041 .cs-button-solid:hover:before {
+    width: 100%;
   }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
-      }
-    }
+  #hero-2041 .cs-form {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
   }
-
-  /*-- -------------------------- -->
-<---       Side By Side         -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs-r {
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        right: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        bottom: 0;
-        left: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-        &:last-of-type {
-          margin-bottom: (32/16rem);
-        }
-      }
-
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
-      }
-
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-    }
+  #hero-2041 .cs-label {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
-
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs-r {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
-
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        /* sends it to the right */
-        order: 2;
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
+  #hero-2041 .cs-flex {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 0;
   }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs-r {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
-      }
-    }
+  #hero-2041 .cs-color {
+    color: #ff4747;
   }
-
-  /*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px - Contains hover animation */
-  @media only screen and (min-width: 0em) {
-    #gallery {
-      /* Centers button */
-      text-align: center;
-      padding: var(--sectionPadding);
-      position: relative;
-      /* Prevents overflow from the image going off screen */
-      overflow: hidden;
-      .cs-container {
-        width: 100%;
-        max-width: (1322/16em);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-      }
-
-      .cs-title {
-        text-align: center;
-        max-width: (621/16rem);
-        margin-bottom: (40/16rem);
-      }
-
-      .cs-image-group {
-        /* used rem so it doesn't scale with the font size of on parent */
-        font-size: ~"min(1.1vw, 1em)";
-        width: 100%;
-        max-width: (1322/16em);
-        margin: 0 auto (60/16rem);
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: (30/16em);
-      }
-
-      .cs-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: (30/16em);
-      }
-
-      .cs-picture {
-        display: block;
-        position: relative;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-row-1 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (567/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (512/16em);
-        }
-      }
-
-      .cs-row-2 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (492/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (517/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-      }
-
-      .cs-row-3 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (625/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (452/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-      }
-    }
+  #hero-2041 .cs-input {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    color: #767676;
+    border: none;
+    border-radius: 0.5rem;
   }
-
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #gallery {
-        .cs-title {
-          color: var(--bodyTextColorWhite);
-        }
-      }
-    }
+  #hero-2041 .cs-submit {
+    width: max-content;
+    align-self: center;
   }
-
-  /*-- -------------------------- -->
-<---          Reviews           -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #reviews {
-      /* Centers the button */
-      text-align: center;
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1104/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-      }
-
-      .cs-title {
-        text-align: center;
-        max-width: (700/16rem);
-      }
-
-      .cs-text {
-        text-align: center;
-        max-width: (650/16rem);
-        /* 88px - 104px */
-        margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
-      }
-
-      .cs-card-group {
-        /* 48px - 64px */
-        margin: 0 auto clamp(3rem, 5vw, 4rem);
-        padding: 0;
-      }
-
-      .cs-item {
-        text-align: left;
-        list-style: none;
-        width: 100%;
-        max-width: (542/16rem);
-        margin: 0 auto (64/16rem);
-        /* Prevents padding from affecting height & width */
-        box-sizing: border-box;
-        /* Padding L & R - 16px - 32px */
-        padding: (60/16rem) clamp(1rem, 3.2vw, 2rem) 0;
-        /* 32px - 40px */
-        padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-        background: #fff;
-        box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-        border-radius: (4/16rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-
-      .cs-item-img {
-        width: (80/16rem);
-        height: (80/16rem);
-        position: absolute;
-        top: (-40/16rem);
-      }
-
-      .cs-item-p {
-        font-size: (16/16rem);
-        line-height: 1.5em;
-        margin: 0 0 (20/16rem);
-        padding-bottom: (20/16rem);
-        color: var(--bodyTextColor);
-        border-bottom: 1px solid #e8e9ec;
-      }
-
-      .cs-reviewer {
-        font-size: (16/16rem);
-        font-weight: 700;
-        line-height: 1.5em;
-        width: 40%;
-        margin: 0 auto 0 0;
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-desc {
-        font-size: (14/16rem);
-        font-weight: 400;
-        color: var(#353535);
-        display: block;
-      }
-
-      .cs-item-stars {
-        width: (96/16rem);
-        height: (16/16rem);
-      }
-    }
+  #hero-2041 .cs-background {
+    width: 100%;
+    height: 66%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
   }
-
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #reviews {
-      .cs-card-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: (16/16rem);
-      }
-
-      .cs-item {
-        /* reset margin so it won't interfere with flexbox */
-        margin: 0;
-      }
-    }
+  #hero-2041 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 0.25;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #reviews {
-        .cs-title,
-        .cs-text,
-        .cs-item-p,
-        .cs-reviewer {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-item {
-          background: var(--medium);
-        }
-
-        .cs-desc {
-          color: var(--primaryLight);
-        }
-      }
-    }
+  #hero-2041 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-2041 .cs-form {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  #hero-2041 .cs-submit {
+    /* causes the submit button to grow to it's "auto" width and shrinks the inputs. this makes everything fit within cs-form */
+    flex: 1 0 auto;
+    align-self: flex-end;
+  }
+  #hero-2041 .cs-label {
+    width: 100%;
+    min-width: 0;
+  }
+  #hero-2041 .cs-background {
+    height: 84%;
+  }
+}
+/* Large Desktop - Parallax Effect - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-2041 .cs-background {
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dental-hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #hero-2041 .cs-background img {
+    display: none;
+  }
+}
+                                
 </style>
+
+<script>
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1982">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Dental Care For Everyone</span>
+          <h2 class="cs-title">Smiles More Radiant and Healthy is Our Passion</h2>
+          <p class="cs-text-large">
+              Our team focuses on delivering tailored solutions for your unique dental needs. 
+          </p>
+          <p class="cs-text">
+            From routine checkups to advanced treatments, we ensure your comfort and confidence every step of the way. We prioritize a customized approach to your dental care journey. From preventive care to complex restorative procedures, our goal is to provide comprehensive solutions that align with your lifestyle and expectations.
+          </p>
+          <a href="/about" class="cs-button-solid">Learn More</a>
+          <div class="cs-ratings">
+              <div class="cs-stars">
+                  <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                  <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                  <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                  <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+                  <img class="cs-star" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-star.svg" alt="star" width="24" height="24" aria-hidden="true">
+              </div>
+              <div class="cs-rating">
+                  <h3 class="cs-h3">99.99% Customer Satisfaction</h3>
+                  <p class="cs-rating-text">
+                      based on 750+ reviews of 6,154 completed projects
+                  </p>
+              </div> 
+              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dentist-tooth.svg" alt="star" width="20" height="20">
+          </div>
+      </div>
+      <div class="cs-image-group">
+          <picture class="cs-background">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1667133295308-9ef24f71952e?q=80&w=2857&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1667133295308-9ef24f71952e?q=80&w=2857&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+              <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1667133295308-9ef24f71952e?q=80&w=2857&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="staff member smiling" width="630" height="680">
+          </picture>
+          <div class="cs-box">
+              <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/teal-users.svg" alt="people" width="60" height="60">
+              <span class="cs-desc">
+                  24,000+
+              </span>
+              <p class="cs-box-text">
+                  Patients served and bring back their happy smile
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+                              
+
+<style>
+
+  /*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1982 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-1982:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #sbs-1982 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-1982 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 35.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-1982 .cs-text-large {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #sbs-1982 .cs-text {
+    margin-bottom: 2rem;
+  }
+  #sbs-1982 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-decoration: none;
+    margin: 0;
+    /* 32px - 48px */
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    background-color: var(--primary);
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  #sbs-1982 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #sbs-1982 .cs-button-solid:hover {
+    color: #fff;
+  }
+  #sbs-1982 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #sbs-1982 .cs-ratings {
+    width: 100%;
+    margin: 0;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+    align-self: stretch;
+  }
+  #sbs-1982 .cs-ratings:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.1;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #sbs-1982 .cs-stars {
+    display: flex;
+    flex-direction: row;
+  }
+  #sbs-1982 .cs-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  #sbs-1982 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #sbs-1982 .cs-rating-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #sbs-1982 .cs-icon {
+    width: 5.125rem;
+    height: 5.9375rem;
+    position: absolute;
+    top: -1.875rem;
+    right: 1.25rem;
+  }
+  #sbs-1982 .cs-image-group {
+    width: 100%;
+    max-width: 39.375rem;
+    /* Changes to auto at desktop */
+    height: 30rem;
+    /* clips the corners of the children around the border radius */
+    overflow: hidden;
+    border-radius: 1rem;
+    order: -1;
+    position: relative;
+  }
+  #sbs-1982 .cs-background {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent dimensions */
+    object-fit: cover;
+    display: block;
+  }
+  #sbs-1982 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent like a backgorund image */
+    object-fit: cover;
+    display: block;
+  }
+  #sbs-1982 .cs-box {
+    text-align: left;
+    width: 100%;
+    max-width: 19rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: #1A1A1A;
+    /* 48px - 80px */
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    /* 12px - 24px */
+    right: clamp(0.75rem, 2.5vw, 1.5rem);
+    /* 12px - 24px */
+    bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+  #sbs-1982 .cs-box-icon {
+    width: 3.75rem;
+    height: auto;
+    display: block;
+  }
+  #sbs-1982 .cs-desc {
+    /* 25px - 31px */
+    font-size: clamp(1.5625rem, 3.125vw, 1.9375rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    color: #fff;
+  }
+  #sbs-1982 .cs-box-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0.75rem 0 0 0;
+    color: #f7f7f7;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1982 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #sbs-1982 .cs-content {
+    align-self: center;
+  }
+  #sbs-1982 .cs-image-group {
+    height: auto;
+    min-height: 42.5rem;
+  }
+}
+                                
+</style>
+
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1975">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Dental Care For Everyone</span>
+          <h2 class="cs-title">Explore Our Services</h2>
+          <p class="cs-text">
+            Discover some of the wide range of dental services we offer to meet your individual needs, from preventative care to specialized treatments
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Gum Surgery</h3>
+                  <p class="cs-item-text">
+                    Effective treatments to naddress gum disease and improve oral health, ensuring your gums are strong and healthy.
+                  </p>
+              </div>
+              <a href="#faq-326" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/toothache.png" alt="icon"
+                  width="181" height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Dental Implants</h3>
+                  <p class="cs-item-text">
+                    Durable and natural-looking solutions to replace missing teeth, restoring both functionality and confidence in your smile.
+                  </p>
+              </div>
+              <a href="#faq-326" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/implant.png" alt="icon" width="181"
+                  height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Tooth Restoration</h3>
+                  <p class="cs-item-text">
+                    Expert solutions to restore chipped or broken teeth, helping you regain comfort and appearance.
+                  </p>
+              </div>
+              <a href="#faq-326" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gums.png" alt="icon"
+                  width="181" height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Dental Sealants</h3>
+                  <p class="cs-item-text">
+                    A protective coating applied to teeth to prevent cavities and maintain long-lasting oral health
+                  </p>
+              </div>
+              <a href="#faq-326" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/teeth.png" alt="icon" width="181"
+                  height="102">
+              </picture>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1975 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+  }
+  #services-1975::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1975 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1975 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1975 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1975 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    /* 16px - 32px */
+    padding: clamp(1rem, 4vw, 2rem);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+  }
+  #services-1975 .cs-item:hover {
+    border-color: var(--primary);
+  }
+  #services-1975 .cs-item:hover .cs-h3 {
+    color: var(--secondary);
+  }
+  #services-1975 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #services-1975 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-1975 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-1975 .cs-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-top: auto;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #services-1975 .cs-picture {
+    margin: 2rem 0 0 0;
+    padding: 3.625rem 0 0 7.1875rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  #services-1975 .cs-picture:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1975 .cs-picture img {
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+    display: flex;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1975 .cs-content {
+    width: 55%;
+  }
+  #services-1975 .cs-item {
+    grid-column: span 6;
+  }
+  #services-1975 .cs-picture {
+    padding: 2.3125rem 0 0 6.1875rem;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #services-1975 .cs-item {
+    grid-column: span 3;
+  }
+  #services-1975 .cs-picture {
+    padding: 2.3125rem 0 0 3.75rem;
+  }
+}
+                                
+</style>
+
+  <!-- ============================================ -->
+<!--                     Quote                    -->
+<!-- ============================================ -->
+
+<section id="quote-2059">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Our Commitment</span>
+          <p class="cs-quote">
+              At DentalEZ, we combine advanced dental technology with compassionate care to create healthy smiles that last. From routine cleanings to complex procedures, our experienced team is dedicated to ensuring your comfort and achieving the results you desire.
+          </p>
+          <span class="cs-name">Oliver Harrington</span>
+          <span class="cs-job">Clinical Director</span>
+      </div>
+      <!-- make sure the before/after images are the same dimensions and that the object of focus is centered. you may need to adjust the images a bit to get it just right. -->
+      <div class="cs-picture-group">
+          <picture class="cs-picture cs-picture-before">
+              <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-before.png">
+              <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-before.png">
+              <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-before.png" alt="after" width="630" height="877">
+          </picture>
+          <picture class="cs-picture cs-picture-after">
+              <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-after.png">
+              <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-after.png">
+              <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/teeth-after.png" alt="before" width="630" height="877">
+          </picture>
+          <div class="cs-slider-wrapper">
+              <div class="cs-tags">
+                  <span class="cs-tag">BEFORE</span>
+                  <span class="cs-tag">AFTER</span>
+              </div>
+              <div class="cs-line"></div>
+              <div class="cs-arrows">
+                  <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dental-before-arrow.svg" alt="before" width="16" height="16">
+                  <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dental-after-arrow.svg" alt="after" width="16" height="16">
+              </div>
+          </div>
+      </div>
+  </div>
+  <picture class="cs-background">
+      <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dental-waves.svg" alt="waves" width="320" height="700">
+  </picture>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---           Quote            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #quote-2059 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #quote-2059 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 48px - 100px */
+    gap: clamp(3rem, 10vw, 6.25rem);
+    position: relative;
+    z-index: 2;
+  }
+  #quote-2059 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+  }
+  #quote-2059 .cs-topper {
+    text-align: center;
+    color: var(--secondary);
+  }
+  #quote-2059 .cs-quote {
+    /* 25px - 39px */
+    font-size: clamp(1.5625rem, 2.8vw, 2.4375rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    /* 24px - 32px */
+    margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+    color: var(--headerColor);
+  }
+  #quote-2059 .cs-name {
+    /* 16px - 25px */
+    font-size: clamp(1rem, 3vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    color: var(--primary);
+    display: block;
+  }
+  #quote-2059 .cs-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #quote-2059 .cs-picture-group {
+    width: 100%;
+    /* the exact height/widths are calculated in the JS. set maximums here */
+    max-width: 52.875rem;
+    /* 180px - 480px */
+    max-height: clamp(11.25rem, 47vw, 30rem);
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    position: relative;
+  }
+  #quote-2059 .cs-picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #quote-2059 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #quote-2059 .cs-picture-before {
+    width: 50%;
+    z-index: 2;
+  }
+  #quote-2059 .cs-slider-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+  }
+  #quote-2059 .cs-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    position: absolute;
+    /* 6px - 16px */
+    top: clamp(0.375rem, 1.5vw, 1rem);
+    left: 50%;
+    transform: translateX(-56%);
+  }
+  #quote-2059 .cs-tag {
+    /* 6px - 16px */
+    font-size: clamp(0.375rem, 1.5vw, 1rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--Main-White, #fff);
+  }
+  #quote-2059 .cs-line {
+    width: 1px;
+    height: 100%;
+    background: #fff;
+  }
+  #quote-2059 .cs-arrows {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #quote-2059 .cs-arrow {
+    /* 16px - 40px */
+    width: clamp(1rem, 4vw, 2.5rem);
+    height: auto;
+  }
+  #quote-2059 .cs-background {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 180px - 330px */
+    bottom: clamp(11.25rem, 25vw, 20.625rem);
+    z-index: 1;
+  }
+  #quote-2059 .cs-background:before {
+    /* actual background-color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  #quote-2059 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+                                
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('#quote-2059 .cs-picture-group');
+        const beforeImage = container.querySelector('.cs-picture-after img');
+        const afterImage = container.querySelector('.cs-picture-before img');
+        const afterContainer = container.querySelector('.cs-picture-before');
+        const slider = container.querySelector('.cs-slider-wrapper');
+
+        let isResizing = false;
+
+        const getAspectRatio = (img) => img.naturalWidth / img.naturalHeight;
+
+        const resize = (e) => {
+            if (!isResizing) return;
+            const containerRect = container.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - containerRect.left;
+            const percent = Math.max(0, Math.min(100, x / containerRect.width * 100));
+            slider.style.left = `${percent}%`;
+            afterContainer.style.width = `${percent}%`;
+        };
+
+        const setDimensions = () => {
+            const aspectRatio = getAspectRatio(beforeImage);
+            const containerWidth = container.offsetWidth;
+            const containerStyle = window.getComputedStyle(container);
+            const maxHeight = parseInt(containerStyle.maxHeight);
+            const containerHeight = containerWidth / aspectRatio;
+
+            const finalHeight = Math.min(containerHeight, maxHeight);
+            container.style.height = `${finalHeight}px`;
+
+            const imageAspectRatio = aspectRatio;
+            const containerAspectRatio = containerWidth / finalHeight;
+            let imageWidth, imageHeight;
+
+            if (imageAspectRatio > containerAspectRatio) {
+                imageHeight = finalHeight;
+                imageWidth = imageHeight * imageAspectRatio;
+            } else {
+                imageWidth = containerWidth;
+                imageHeight = imageWidth / imageAspectRatio;
+            }
+
+            const offsetX = (containerWidth - imageWidth) / 2;
+            const offsetY = (finalHeight - imageHeight) / 2;
+
+            [beforeImage, afterImage].forEach(img => {
+                img.style.width = `${imageWidth}px`;
+                img.style.height = `${imageHeight}px`;
+                img.style.left = `${offsetX}px`;
+                img.style.top = `${offsetY}px`;
+            });
+
+            afterContainer.style.width = '50%';
+        };
+
+        Promise.all(Array.from(container.querySelectorAll('img')).map(img => {
+            return new Promise((resolve) => {
+                if (img.complete) resolve();
+                else img.onload = resolve;
+            });
+        })).then(setDimensions);
+
+        window.addEventListener('resize', setDimensions);
+
+        container.addEventListener('mousedown', () => isResizing = true);
+        container.addEventListener('touchstart', () => isResizing = true);
+        window.addEventListener('mousemove', resize);
+        window.addEventListener('touchmove', resize);
+        window.addEventListener('mouseup', () => isResizing = false);
+        window.addEventListener('touchend', () => isResizing = false);
+
+        container.addEventListener('mousemove', (e) => {
+            if (!isResizing) {
+                const containerRect = container.getBoundingClientRect();
+                const x = e.clientX - containerRect.left;
+                const percent = Math.max(0, Math.min(100, x / containerRect.width * 100));
+                slider.style.left = `${percent}%`;
+                afterContainer.style.width = `${percent}%`;
+            }
+        });
+
+        container.addEventListener('mouseleave', () => {
+            if (!isResizing) {
+                slider.style.left = '50%';
+                afterContainer.style.width = '50%';
+            }
+        });
+    });
+                                
+</script>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-2013">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">How It Works</span>
+          <h2 class="cs-title">Dentistry for The Whole Family</h2>
+          <p class="cs-text">
+            Ensuring the oral health of every family member is our priority. From regular checkups to tailored treatments, we provide care that’s designed to meet the needs of each age group, promoting healthy habits and confident smiles.
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-calendar2.svg" alt="link" width="20" height="20" loading="lazy" decoding="async">
+              <h3 class="cs-h3">Book Appointment</h3>
+              <p class="cs-item-text">
+                Book your appointment easily and take the first step toward excellent dental care
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">01</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="number" width="48" height="48">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-medical.svg" alt="link" width="20" height="20" loading="lazy" decoding="async">
+              <h3 class="cs-h3">Visit Your Doctor</h3>
+              <p class="cs-item-text">
+                Visit your doctor for a friendly consultation, ensuring your dental health is in the best hands.
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">02</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1642977195740-1204d9c401b5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset=https://images.unsplash.com/photo-1642977195740-1204d9c401b5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1642977195740-1204d9c401b5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="number" width="48" height="48">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-medicine.svg" alt="link" width="20" height="20" loading="lazy" decoding="async">
+              <h3 class="cs-h3">Take Suggested Medicine</h3>
+              <p class="cs-item-text">
+                Follow your doctors advice with the suggested medicine to ensure a smooth recovery and maintain your oral health effortlessly.
+              </p>
+              <div class="cs-number-wrapper">
+                  <span class="cs-number">03</span>
+              </div>
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1676897288522-e8a081e71430?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1676897288522-e8a081e71430?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1676897288522-e8a081e71430?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="number" width="48" height="48">
+              </picture>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-2013 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+  }
+  #steps-2013::before {
+    /* backgorund color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #steps-2013 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-2013 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #steps-2013 .cs-text {
+    max-width: 56.25rem;
+  }
+  #steps-2013 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+    position: relative;
+  }
+  #steps-2013 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    padding: clamp(1.5rem, 3.1vw, 2rem) clamp(1rem, 2.3vw, 2rem);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 12;
+    position: relative;
+    transition: border 0.3s;
+  }
+  #steps-2013 .cs-item:hover {
+    border: 1px solid var(--primary);
+  }
+  #steps-2013 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #steps-2013 .cs-icon {
+    width: 3rem;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  #steps-2013 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #steps-2013 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 1.5rem 0;
+    color: var(--bodyTextColor);
+  }
+  #steps-2013 .cs-number-wrapper {
+    width: 3rem;
+    height: 3rem;
+    margin-top: auto;
+    margin-bottom: -1.5rem;
+    padding: 0.625rem;
+    background-color: var(--headerColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  #steps-2013 .cs-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  #steps-2013 .cs-picture {
+    width: 100%;
+    /* 140px - 180px */
+    height: clamp(8.75rem, 18vw, 11.25rem);
+    display: block;
+    flex: none;
+  }
+  #steps-2013 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-2013 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-2013 .cs-item {
+    grid-column: span 4;
+  }
+}
+                                
+</style>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-326">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">FAQ’s</span>
+          <h2 class="cs-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="cs-flex-group">
+          <ul class="cs-faq-group">
+              <!-- Active class added as default -->
+              <li class="cs-faq-item active">
+                  <button class="cs-button">
+                      <span class="cs-button-text">
+                        What dental services do you offer?
+                      </span>
+                  </button>
+                  <p class="cs-item-p">
+                    At DentalEZ, we provide a wide range of dental care to meet all your needs. From routine cleanings and checkups to advanced restorative treatments like dental implants and gum surgery, we have you covered. We also offer cosmetic dentistry, including teeth whitening and solutions for chipped or broken teeth, as well as orthodontic services like traditional braces for teeth alignment.
+                  </p>
+              </li>
+              <li class="cs-faq-item">
+                  <button class="cs-button">
+                      <span class="cs-button-text">
+                        How do I book an appointment?
+                      </span>
+                  </button>
+                  <p class="cs-item-p">
+                    Booking an appointment is simple and convenient. You can contact us online through our website by filling out a quick form or give us a call during business hours, and our friendly staff will assist you. If you're a new patient, we'll guide you through any steps so you can focus on your dental care.
+                  </p>
+              </li>
+              <li class="cs-faq-item">
+                  <button class="cs-button">
+                      <span class="cs-button-text">
+                        Do you accept my dental insurance?
+                      </span>
+                  </button>
+                  <p class="cs-item-p">
+                    Yes! DentalEZ works with most major dental insurance providers to ensure your care is accessible and affordable. If you're unsure about your coverage, feel free to contact us, and we'll help verify your insurance benefits. For those without insurance, we also offer flexible payment options and financing plans.
+                  </p>
+              </li>
+              <li class="cs-faq-item">
+                  <button class="cs-button">
+                      <span class="cs-button-text">
+                        What can I expect during my first visit?
+                      </span>
+                  </button>
+                  <p class="cs-item-p">
+                    Your first visit is all about getting to know you and your dental health goals. We'll start with a thorough exam, which may include X-rays, followed by a discussion of any concerns or treatment plans. Our team will walk you through every step to ensure you feel comfortable and informed about your care.
+                  </p>
+              </li>
+              <li class="cs-faq-item">
+                  <button class="cs-button">
+                      <span class="cs-button-text">
+                        Do you offer emergency dental care?
+                      </span>
+                  </button>
+                  <p class="cs-item-p">
+                    Absolutely! We understand that dental emergencies can happen unexpectedly. Whether it's a toothache, a broken tooth, or another urgent issue, we're here to help. Call our office immediately, and we’ll prioritize your care to get you the relief you need as quickly as possible.
+                  </p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<style>
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-326 {
+      padding: var(--sectionPadding);
+  }
+  #faq-326 .cs-container {
+      width: 100%;
+      max-width: 43.75rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq-326 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+  }
+
+  #faq-326 .cs-title {
+      margin: 0;
+  }
+  #faq-326 .cs-faq-group {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.75rem;
+  }
+  #faq-326 .cs-faq-item {
+      list-style: none;
+      width: 100%;
+      background-color: #f7f7f7;
+      /* clips all corners of the button that overlap the rounded border */
+      overflow: hidden;
+      border-radius: 0.75rem;
+      transition: border-bottom 0.3s;
+  }
+  #faq-326 .cs-faq-item.active .cs-button {
+      background-color: var(--primary);
+      color: white; /* Updated color */
+  }
+  #faq-326 .cs-faq-item.active .cs-button:before {
+      background-color: var(--secondaryLight);
+      transform: rotate(315deg);
+  }
+  #faq-326 .cs-faq-item.active .cs-button:after {
+      background-color: var(--secondaryLight);
+      transform: rotate(-315deg);
+  }
+  #faq-326 .cs-faq-item.active .cs-item-p {
+      height: auto;
+      /* 20px - 24px top & bottom */
+      /* 16px - 24px left & right */
+      padding: clamp(1.25rem, 1.3vw, 1.5rem) clamp(1rem, 2vw, 1.5rem);
+      opacity: 1;
+  }
+  #faq-326 .cs-button {
+      font-size: 1rem;
+      line-height: 1.2em;
+      text-align: left;
+      font-weight: bold;
+      /* 16px - 20px */
+      padding: clamp(1rem, 1.3vw, 1.25rem);
+      background-color: #f7f7f7;
+      border: none;
+      color: var(--headerColor);
+      display: block;
+      width: 100%;
+      position: relative;
+      transition:
+          background-color 0.3s,
+          color 0.3s;
+  }
+  #faq-326 .cs-button:hover {
+      cursor: pointer;
+  }
+  #faq-326 .cs-button:before {
+      /* left line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--headerColor);
+      opacity: 1;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 1.5rem;
+      transform: rotate(45deg);
+      /* animate the transform from the left side of the x axis, and the center of the y */
+      transform-origin: left center;
+      transition: transform 0.5s;
+  }
+  #faq-326 .cs-button:after {
+      /* right line */
+      content: "";
+      width: 0.5rem;
+      height: 0.125rem;
+      background-color: var(--headerColor);
+      opacity: 1;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 1.3125rem;
+      transform: rotate(-45deg);
+      /* animate the transform from the right side of the x axis, and the center of the y */
+      transform-origin: right center;
+      transition: transform 0.5s;
+  }
+  #faq-326 .cs-button-text {
+      width: 80%;
+      display: block;
+  }
+  #faq-326 .cs-item-p {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      width: 90%;
+      height: 0;
+      margin: 0;
+      /* 16px - 24px */
+      padding: 0 clamp(1rem, 2vw, 1.5rem);
+      opacity: 0;
+      color: var(--bodyTextColor);
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      transition:
+          opacity 0.3s,
+          padding-bottom 0.3s;
+  }
+}
+
+                              
+</style>
+
+<script>
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+      for (const item of faqItems) {
+          const onClick = () => {
+          item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+      }
+                              
+</script>
+                              
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1670">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Testimonials</span>
+          <h2 class="cs-title">Our Customer Reviews</h2>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                    Elliot Carter
+                      <span class="cs-job">Long-Time Patient</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                    DentalEZ provided an exceptional experience from start to finish. The staff were incredibly friendly and made me feel comfortable right away. Their expertise and attention to detail gave me confidence in every step of my treatment
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="https://images.unsplash.com/photo-1584213447956-a97b4f8633d7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                      Brooklyn Simmons
+                      <span class="cs-job">Happy Customer</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                    My experience at DentalEZ was nothing short of amazing. The team was so warm and welcoming, and they took the time to explain everything in detail, making me feel completely at ease. 
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+          </li>
+      </ul>
+  </div>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<!--          Reviews           -->
+<!-- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1670 {
+    padding: var(--sectionPadding);
+  }
+  #reviews-1670 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4.5vw, 4rem);
+  }
+  #reviews-1670 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-1670 .cs-title {
+    margin: 0rem;
+  }
+  #reviews-1670 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-1670 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 20px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    display: flex;
+    grid-column: span 12;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  #reviews-1670 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #reviews-1670 .cs-profile {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image stays inside the circle */
+    display: block;
+  }
+  #reviews-1670 .cs-name {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1670 .cs-job {
+    /* 14px - 16px */
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-1670 .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #reviews-1670 .cs-item-stars {
+    width: 6.75rem;
+    height: auto;
+  }
+  #reviews-1670 .cs-review {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    z-index: 1;
+  }
+  #reviews-1670 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-1670 .cs-item {
+    grid-column: span 6;
+  }
+}
+</style>
+ 
+                   
+
+
+
+
+
+
+
+                              
+
+                              
+                              
+ 

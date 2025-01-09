@@ -5,7 +5,7 @@ import Landing from "../components/Landing.astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
 import {getOptimizedImage} from "../js/utils"
-import landingImage from "../assets/images/cabinets2.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import landingImage from "../assets/images/dentist-clinic.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 const optimizedImage = await getOptimizedImage(landingImage)
 ---
 
@@ -23,297 +23,1053 @@ const optimizedImage = await getOptimizedImage(landingImage)
     image={optimizedImage}
   />
 
-  <!-- ============================================ -->
-  <!--                 Side By Side                 -->
-  <!-- ============================================ -->
+<!-- ============================================ -->
+<!--               Services + Stats               -->
+<!-- ============================================ -->
 
-  <section id="sbs">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
+<section id="services-2051">
+  <div class="cs-container">
+      <div class="cs-wrapper">
+          <div class="cs-content">
+              <span class="cs-topper">About Us</span>
+              <h2 class="cs-title">Passionate About Perfect Smiles</h2>
+              <p class="cs-text larger-text">
+                  
+                Dedicated to enhancing oral health, DentalEZ offers top-tier dental care with a focus on patient comfort and satisfaction. We strive to create a welcoming environment where modern technology meets compassionate service, ensuring the best care for every individual.
+              </p>
+              <!-- <p class="cs-text">
+                Our services range from preventative checkups to advanced cosmetic and restorative treatments. With a commitment to excellence, we tailor each visit to suit your unique needs, fostering long-term oral health and confidence. Experience a practice where your smile truly matters.
+              </p> -->
+              
+              <a href="/contact" class="cs-button-solid">Contact Us</a>
+          </div>
+          <div class="cs-picture-group">
+              <picture class="cs-picture">
+                  <!--Mobile Image-->
+                  <source media="(max-width: 600px)" srcset="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg">
+                  <!--Tablet and above Image-->
+                  <source media="(min-width: 601px)" srcset="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg">
+                  <img loading="lazy" decoding="async" src="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg" alt="dental checkup" width="328" height="520">
+              </picture>
+              
+          </div>
       </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">About Us</span>
-        <h2 class="cs-title">About Company Title</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
-            consequat tincidunt turpis sit amet imperdiet for mind.
-          </p>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
-          <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
-          />
-        </div>
-        <a href="/projects" class="cs-button-solid">Our Projects</a>
+      <div class="cs-stat-group">
+          <h4 class="cs-text">
+            With over 12 years of clinical experience, our team is dedicated to delivering exceptional care. Boasting certified specialists across various fields, we provide expertise and personalized solutions. Recognized for excellence, we aim to combine experience and innovation for outstanding results. 
+          </h4>
+          <ul class="cs-stats">
+              <li class="cs-li">
+                  <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dental-first-aid.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                  <div class="cs-flex">
+                      <span class="cs-stat">12+</span>
+                      <p class="cs-stat-text">Years of scientific and clinical work.</p>
+                  </div>
+              </li>
+              <li class="cs-li">
+                  <img class="cs-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dental-merit.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                  <div class="cs-flex">
+                      <span class="cs-stat">35</span>
+                      <p class="cs-stat-text">Certified specialists in various fields</p>
+                  </div>
+              </li>
+          </ul>
       </div>
-    </div>
-  </section>
-  <CTA />
-</BaseLayout>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Gum Surgery</h3>
+                  <p class="cs-item-text">
+                    Effective treatments to address gum disease and improve oral health, ensuring your gums are strong and healthy.
+                  </p>
+                  <!-- <a href="" class="cs-link">
+                      Learn More
+                  </a> -->
+              </div>
+              <picture class="cs-item-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/toothache.png" alt="icon"
+                  width="181" height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Dental Implants</h3>
+                  <p class="cs-item-text">
+                    Durable and natural-looking solutions to replace missing teeth, restoring both functionality and confidence in your smile.
+                  </p>
+                  <!-- <a href="" class="cs-link">
+                      Learn More
+                  </a> -->
+              </div>
+              <picture class="cs-item-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/implant.png" alt="icon" width="181"
+                  height="102">
+              </picture>
+          </li>
+      </ul>
+  </div>
+</section>
 
-<style lang="less">
-  /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+<style>
 
   /*-- -------------------------- -->
-<---       Side By Side         -->
+<---          Services          -->
 <--- -------------------------- -*/
 
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs {
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        left: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        right: 0;
-        bottom: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-        color: var(--bodyTextColor);
-
-        &:last-of-type {
-          margin-bottom: (32/16rem);
-        }
-      }
-
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
-      }
-
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-
-      .cs-button-solid {
-        margin-top: (32/16rem);
-      }
-    }
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-2051 {
+    padding: var(--sectionPadding);
+    background-color: ##fdfcf9;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #services-2051::before {
+    /* black background, removed at tablet */
+    content: "";
+    width: 100%;
+    background-color: #1a1a1a;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 36.25rem;
+    left: 0;
+    z-index: -1;
+  }
+  #services-2051 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-2051 .cs-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #services-2051 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-2051 .cs-topper {
+    color: var(--secondary);
+  }
+  #services-2051 .cs-title {
+    /* 23 characters wide including spaces */
+    max-width: 26ch;
+    color: var(--bodyTextColorWhite);
+  }
+  #services-2051 .cs-text {
+    margin-bottom: 0.75rem;
+    color: var(--bodyTextColorWhite);
+    
+    
   }
 
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
+  #services-2051 .larger-text {
+  font-size: 1.2rem; /* Set the desired size */
+}
 
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
+  #services-2051 .cs-text:last-of-type {
+    margin-bottom: 0;
   }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
-      }
-    }
+  #services-2051 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-decoration: none;
+    margin: 2rem 0 0;
+    padding: 0 3rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    color: #fff;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
   }
+  #services-2051 .cs-button-solid:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #services-2051 .cs-button-solid:hover {
+    color: black;
+  }
+  #services-2051 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #services-2051 .cs-picture-group {
+    width: 100%;
+    min-height: 32.5rem;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    
+    
+  }
+  #services-2051 .cs-picture {
+    width: 100%;
+    min-height: 22.625rem;
+    /* clips img tag corners */
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: block;
+    position: relative;
+    z-index: 1;
+    
+  }
+  #services-2051 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  #services-2051 .cs-box {
+    text-align: left;
+    width: 88%;
+    max-width: 19.0625rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    position: absolute;
+    /* 16px - 40px */
+    bottom: clamp(1rem, 4vw, 2.5rem);
+    /* 16px - 40px */
+    left: clamp(1rem, 4vw, 2.5rem);
+    z-index: 1;
+  }
+  #services-2051 .cs-box:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-2051 .cs-box-icon {
+    width: 3.75rem;
+    height: auto;
+    margin: 0 0 1rem;
+    display: block;
+  }
+  #services-2051 .cs-box-number {
+    font-size: 1.9375rem;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #services-2051 .cs-box-desc {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #services-2051 .cs-stat-group {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 10;
+  }
+  #services-2051 .cs-stats {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  #services-2051 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #services-2051 .cs-icon {
+    /* 64px - 80px */
+    width: clamp(4rem, 8vw, 5rem);
+    height: auto;
+    display: block;
+    flex: none;
+  }
+  #services-2051 .cs-stat {
+    /* 31px - 39px */
+    font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 0.25rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #services-2051 .cs-stat-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.8vw, 1rem);
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #services-2051 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-2051 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    /* 16px - 32px */
+    padding: clamp(1rem, 4.5vw, 2rem);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  #services-2051 .cs-item:hover {
+    border-color: var(--primary);
+  }
+  #services-2051 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #services-2051 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-2051 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-2051 .cs-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-top: auto;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #services-2051 .cs-item-picture {
+    margin: 0;
+    padding: 3.625rem 0 0 7.1875rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+  }
+  #services-2051 .cs-item-picture:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-2051 .cs-item-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2051:before {
+    /* 100px - 200px */
+    top: clamp(6.25rem, 15vw, 12.5rem);
+    bottom: 12.5rem;
+  }
+  #services-2051 .cs-container {
+    max-width: 80rem;
+    align-items: flex-start;
+  }
+  #services-2051 .cs-content {
+    width: 50%;
+    /* 140px - 200px top */
+    /* 48px - 64px right */
+    /* 20px - 80px bottom*/
+    padding: clamp(8.75rem, 20vw, 12.5rem) clamp(3rem, 6vw, 4rem) clamp(1.25rem, 6vw, 5rem) 0;
+  }
+  #services-2051 .cs-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #services-2051 .cs-picture-group {
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+  }
+  #services-2051 .cs-picture {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  #services-2051 .cs-stat-group {
+    flex-direction: row;
+  }
+  #services-2051 .cs-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    grid-column: span 6;
+  }
+  #services-2051 .cs-item-picture {
+    width: 50%;
+    max-width: 11.5625rem;
+    height: auto;
+    padding: 3.8125rem 0 0 0.25rem;
+    flex: none;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-2051 .cs-picture-group {
+    margin-left: 2.5rem;
+  }
+  #services-2051 .cs-li {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+                                
 </style>
+
+<script>
+
+function togglePlayButton() {
+        // Select all elements with the .cs-picture class
+        const picture = document.querySelector('#why-choose-2058 .cs-video-wrapper');
+        const playButton = document.querySelector('#why-choose .cs-play');
+
+        function togglePlayButton() {
+            playButton.classList.toggle('cs-hide');
+        }
+
+        picture.addEventListener('click', togglePlayButton);
+        playButton.addEventListener('click', togglePlayButton);
+    }
+
+    // Call the function to activate the event listeners
+    togglePlayButton();
+
+    function toggleVideoPlayback() {
+        // Select the video element
+        const video = document.querySelector('#why-choose video');
+        const playButton = document.querySelector('#why-choose .cs-play');
+
+        function togglePlay() {
+            // Check if the video is paused
+            if (video.paused) {
+                video.play(); // Play the video if it is paused
+            } else {
+                video.pause(); // Pause the video if it is playing
+            }
+        }
+
+        video.addEventListener("click", togglePlay);
+        playButton.addEventListener("click", togglePlay);
+    }
+
+    // Call the function to activate the event listener
+    toggleVideoPlayback();
+                                
+</script>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="about-1451">
+  <div class="cs-container">
+      <div class="cs-info">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/6812464/pexels-photo-6812464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/6812464/pexels-photo-6812464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/6812464/pexels-photo-6812464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" width="522" height="696">
+          </picture>
+          <div class="cs-content">
+              <span class="cs-header">Leslie Moore</span>
+              <p class="cs-text">
+                Leslie Moore, our lead dentist, has been dedicated to providing exceptional dental care for over 15 years. He’s passionate about helping his patients feel at ease and ensuring they get the best possible treatment. From routine checkups to complex procedures, Leslie combines his extensive knowledge with a caring approach that makes every patient feel comfortable and valued.
+
+                
+              </p>
+              <p class="cs-text">
+                As the head dentist, Leslie leads by example, always striving to stay at the forefront of modern dental techniques and treatments. His commitment to continuing education and patient care is what truly sets him apart, and he takes pride in building lasting relationships with everyone he treats. Whether it’s a simple cleaning or a more advanced procedure, Leslie's gentle touch and professional expertise ensure that you receive the highest standard of care.
+                  
+              </p>
+              <!--Floating Graphic-->
+              <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/public/assets/svgs/seeds-new.svg" alt="person" width="193" height="197">
+          </div>
+      </div>
+      <div class="cs-info">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/6627836/pexels-photo-6627836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/6627836/pexels-photo-6627836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/6627836/pexels-photo-6627836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" width="522" height="696">
+          </picture>
+          <div class="cs-content">
+              <span class="cs-header">Charlie Hawkins</span>
+              <p class="cs-text">
+                Charlie Hawkins, our associate dentist, has been a cornerstone of our team for over a decade. With a calm and approachable demeanor, Charlie is known for making every patient feel welcome and cared for, whether they’re visiting for a routine checkup or a specialized treatment. His dedication to patient comfort and individualized care is unmatched, ensuring a positive experience for everyone he treats.
+              </p>
+              <p class="cs-text">
+                As the second-in-command to our lead dentist, Charlie plays an integral role in maintaining the high standards of care our practice is known for. He stays up-to-date with the latest advancements in dentistry and takes pride in offering tailored solutions for every smile. From preventative care to more advanced procedures, Charlie's expertise and friendly nature make him a trusted and valued member of our team.
+              </p>
+              <!--Floating Graphic-->
+              <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/public/assets/svgs/seeds-2.svg" alt="person" width="193" height="197">
+          </div>
+      </div>
+      <div class="cs-info">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/5355855/pexels-photo-5355855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/5355855/pexels-photo-5355855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5355855/pexels-photo-5355855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" width="522" height="696">
+          </picture>
+          <div class="cs-content">
+              <span class="cs-header">Charlotte Williamson</span>
+              <p class="cs-text">
+                Charlotte Williamson, our office coordinator, is the friendly face and voice behind all your inquiries. For over a decade, Charlotte has been the backbone of our practice, ensuring that every question, appointment, and concern is handled with professionalism and care. Whether it’s a phone call, an email, or an inquiry from our website, Charlotte takes pride in providing prompt and helpful assistance to every patient.
+              </p>
+              <p class="cs-text">
+                Beyond her exceptional organizational skills, Charlotte creates a welcoming atmosphere that sets the tone for the patient experience. She works tirelessly to streamline scheduling, answer queries, and ensure that everything runs smoothly behind the scenes. Charlotte’s dedication to patient care, paired with her approachable and kind-hearted nature, makes her an essential part of our team and someone our patients can always rely on.
+              </p>
+              <!--Floating Graphic-->
+              <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/public/assets/svgs/seeds-new.svg" alt="person" width="193" height="197">
+          </div>
+      </div>
+      <div class="cs-info">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/20596946/pexels-photo-20596946/free-photo-of-portrait-of-smiling-dentist-in-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/20596946/pexels-photo-20596946/free-photo-of-portrait-of-smiling-dentist-in-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+              <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/20596946/pexels-photo-20596946/free-photo-of-portrait-of-smiling-dentist-in-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="person" width="522" height="696">
+          </picture>
+          <div class="cs-content">
+              <span class="cs-header">Kristin Watson</span>
+              <p class="cs-text">
+                Kristan Watson, our assistant dentist, plays a vital role in delivering top-notch care to every patient who walks through our doors. With her keen attention to detail and compassionate approach, Kristan ensures that treatments run smoothly and patients feel at ease during every visit. Her calm demeanor and friendly nature make her a trusted presence, especially for those who might feel nervous about their dental care.
+              </p>
+              <p class="cs-text">
+                As an integral part of our team, Kristan works closely with the lead dentists to provide seamless support during procedures, from routine cleanings to more complex treatments. She’s passionate about creating a comfortable environment and takes pride in helping patients achieve their best oral health. Always eager to learn and grow, Kristan stays informed about the latest advancements in dentistry, ensuring that our patients benefit from the highest standards of care. 
+              </p>
+              <!--Floating Graphic-->
+              <img class="cs-floater" aria-hidden="true" loading="lazy" decoding="async" src="/public/assets/svgs/seeds-2.svg" alt="person" width="193" height="197">
+          </div>
+      </div>
+  </div>
+</section>
+                              
+
+<style>
+/*-- -------------------------- -->
+<---          About             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #about-1451 {
+    padding: var(--sectionPadding);
+  }
+  #about-1451 .cs-container {
+    width: 100%;
+    max-width: 59rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 6.25rem);
+    position: relative;
+    z-index: 1;
+  }
+  #about-1451 .cs-content {
+    width: 100%;
+    padding: 0 0 4rem 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  #about-1451 .cs-info {
+    width: 100%;
+    padding: 0 clamp(1rem, 5vw, 3rem);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(1rem, 2vw, 1.25rem);
+    position: relative;
+    z-index: 1;
+  }
+  #about-1451 .cs-info:before {
+    content: '';
+    width: 100%;
+    height: 85%;
+    background: #F7F7F7;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #about-1451 .cs-header {
+    font-size: var(--headerFontSize);
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 900;
+    margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+    color: var(--headerColor);
+    display: block;
+  }
+  #about-1451 .cs-text {
+    font-size: clamp(0.875rem, 1.5vw, 1.2rem) !important; /* Updated font size */
+    max-width: 43.75rem;
+    margin-bottom: 1rem;
+  }
+  #about-1451 .cs-text:last-of-type {
+    margin-bottom: 0rem;
+  }
+  #about-1451 .cs-picture {
+    width: 85%;
+    max-width: 21.875rem;
+    height: 20.625rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  #about-1451 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #about-1451 .cs-floater {
+    width: clamp(6.25rem, 15vw, 12rem);
+    height: auto;
+    display: none;
+    position: absolute;
+    right: 3.125rem;
+    top: -4.6875rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #about-1451 .cs-info {
+    flex-direction: row;
+    padding: 0;
+  }
+  #about-1451 .cs-info:nth-of-type(even) .cs-content {
+    padding-left: 2.25rem;
+    padding-right: 1.25rem;
+  }
+  #about-1451 .cs-info:nth-of-type(even) .cs-content:before {
+    left: 0;
+    right: auto;
+  }
+  #about-1451 .cs-info:nth-of-type(even) .cs-picture {
+    order: 2;
+  }
+  #about-1451 .cs-info:before {
+    display: none;
+  }
+  #about-1451 .cs-content {
+    margin-top: clamp(2.5rem, 7vw, 7.8125rem);
+    padding: clamp(2rem, 10vw, 9.375rem) 2.25rem 4rem 1.25rem;
+  }
+  #about-1451 .cs-content:before {
+    content: '';
+    width: 120%;
+    height: 100%;
+    background: #F7F7F7;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  #about-1451 .cs-picture {
+    width: 38%;
+    max-width: 16.25rem;
+    height: clamp(16.25rem, 36vw, 21.75rem);
+  }
+  #about-1451 .cs-floater {
+    display: block;
+  }
+}
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #about-1451 .cs-container {
+    max-width: 80rem;
+  }
+  #about-1451 .cs-info {
+    align-items: stretch;
+  }
+  #about-1451 .cs-picture {
+    height: auto;
+    min-height: 43.5rem;
+    width: 32.625rem;
+    max-width: 32.625rem;
+    margin-bottom: 4rem;
+    flex: none;
+  }
+}
+/* Larger Desktop 1600px */
+@media only screen and (min-width: 100rem) {
+  #about-1451 .cs-info:nth-of-type(even) .cs-picture {
+    margin-left: 0;
+  }
+  #about-1451 .cs-picture {
+    margin-left: -5.5rem;
+  }
+}
+                           
+</style>
+
+<!-- ============================================ -->
+<!--                    Team                      -->
+<!-- ============================================ -->
+
+<section id="meet-team-2071">
+  <div class="cs-container">
+      <div class="cs-content">
+          
+          <h2 class="cs-title">Meet Our Team</h2>
+          <h2 class="cs-text">
+            Get to know the dedicated professionals who make your care their priority—friendly faces and skilled hands ready to help you every step of the way.
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <span class="cs-name">Dr. Leslie Moore</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Lead Surgeon</span>
+                  <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Charlie Hawkins</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Lead Surgeon</span>
+                  <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Brooklyn Simmons</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Dental Surgeon</span>
+                  <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Savannah Nguyen</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Dental Surgeon</span>
+                  <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Charlotte Williamson</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Office Coordinator</span>
+                  <span class="cs-department">Handling Inquiries and Office Tasks </span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Kristin Watson</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Dental Assitant</span>
+                  <span class="cs-department">Dental Support and Patient Care</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Dianne Russell</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Dental Assistant</span>
+                  <span class="cs-department">Dental Support and Patient Care</span>
+              </div>
+          </li>
+          <li class="cs-item">
+              <span class="cs-name">Dr. Darlene Robertson</span>
+              <div class="cs-flex">
+                  <span class="cs-job">Dental Assistant</span>
+                  <span class="cs-department">Dental Support and Patient Care</span>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800">
+      <source media="(min-width: 601px)" srcset="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800">
+      <img loading="lazy" decoding="async" src="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800" alt="dentist staff" width="1024" height="894">
+  </picture>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<!--            Team            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #meet-team-2071 {
+    /* 240px - 480px top */
+    /* 60px - 100px bottom */
+    /* 16px left & right */
+    padding: clamp(15rem, 30vw, 30rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    background-color: #FAF6F2;
+    overflow: hidden;
+    position: relative;
+  }
+  #meet-team-2071:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.06%, #FFF 20.29%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #meet-team-2071 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #meet-team-2071 .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 59rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #meet-team-2071 .cs-text {
+    max-width: none;
+  }
+  #meet-team-2071 .cs-card-group {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 2.5rem;
+    position: relative;
+  }
+  #meet-team-2071 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: span 12;
+    gap: 1rem;
+  }
+  #meet-team-2071 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #meet-team-2071 .cs-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  #meet-team-2071 .cs-job {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-team-2071 .cs-department {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-team-2071 .cs-background {
+    width: 100%;
+    height: clamp(20%, 80vw, 100%);
+    min-height: 26.25rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #meet-team-2071 .cs-background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    /* makes image act as a background image */
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #meet-team-2071:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, #FFF 45.39%);
+  }
+  #meet-team-2071 .cs-card-group {
+    gap: 2.5rem 5rem;
+  }
+  #meet-team-2071 .cs-item {
+    text-align: left;
+    align-items: flex-start;
+    grid-column: span 6;
+  }
+  #meet-team-2071 .cs-flex {
+    align-items: flex-start;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #meet-team-2071:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, rgba(255, 255, 255, 0.92) 59.51%);
+  }
+  #meet-team-2071 .cs-container {
+    max-width: 80rem;
+  }
+  #meet-team-2071 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #meet-team-2071 .cs-item {
+    grid-column: span 3;
+  }
+}
+                                
+</style>
+
+                              
+
+ 
+             
+
+
+
+
+
+
+                              
+                              
+
+</BaseLayout>
