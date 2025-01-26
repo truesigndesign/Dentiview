@@ -11,7 +11,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 
 <BaseLayout
   title="About"
-  description="Meta description for the page"
+  description="Learn About Our Dental Clinic"
   preloadedImage = {optimizedImage}
 >
   <!-- ============================================ -->
@@ -34,7 +34,6 @@ const optimizedImage = await getOptimizedImage(landingImage)
               <span class="cs-topper">About Us</span>
               <h2 class="cs-title">Passionate About Perfect Smiles</h2>
               <p class="cs-text larger-text">
-                  
                 Dedicated to enhancing oral health, DentalEZ offers top-tier dental care with a focus on patient comfort and satisfaction. We strive to create a welcoming environment where modern technology meets compassionate service, ensuring the best care for every individual.
               </p>
               <!-- <p class="cs-text">
@@ -46,10 +45,10 @@ const optimizedImage = await getOptimizedImage(landingImage)
           <div class="cs-picture-group">
               <picture class="cs-picture">
                   <!--Mobile Image-->
-                  <source media="(max-width: 600px)" srcset="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg">
+                  <source media="(max-width: 600px)" srcset="/assets/images/illustration.jpg">
                   <!--Tablet and above Image-->
-                  <source media="(min-width: 601px)" srcset="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg">
-                  <img loading="lazy" decoding="async" src="https://www.portmanclearbraces.co.uk/wordpress/wp-content/uploads/2019/10/Burnham-Outside2.jpg" alt="dental checkup" width="328" height="520">
+                  <source media="(min-width: 601px)" srcset="/assets/images/illustration.jpg">
+                  <img loading="lazy" decoding="async" src="/assets/images/illustration.jpg" alt="dental checkup" width="328" height="520">
               </picture>
               
           </div>
@@ -892,9 +891,9 @@ function togglePlayButton() {
       </ul>
   </div>
   <picture class="cs-background">
-      <source media="(max-width: 600px)" srcset="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800">
-      <source media="(min-width: 601px)" srcset="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800">
-      <img loading="lazy" decoding="async" src="https://img.freepik.com/free-photo/medical-theme-portrait-group-doctors-reception-diagnostic-center-hospital_627829-6537.jpg?t=st=1733488703~exp=1733492303~hmac=32807f2ee93103d9507c807e2bbb8e7293cf3e6c074636d6401ec0f72ba44b64&w=1800" alt="dentist staff" width="1024" height="894">
+      <source media="(max-width: 600px)" srcset="/assets/images/dentiview-group.jpg">
+      <source media="(min-width: 601px)" srcset="/assets/images/dentiview-group.jpg">
+      <img loading="lazy" decoding="async" src="/assets/images/dentiview-group.jpg" alt="dentist staff" width="1024" height="894">
   </picture>
 </section>
 

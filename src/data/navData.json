@@ -4,16 +4,26 @@
     "url": "/"
   },
   {
-    "key": "About Us",
-    "url": "/about/"
+    "key": "About",
+    "url": "/about"
+  },
+  {
+    "key": "Services",
+    "url": "#",
+    "children": [
+      { "key": "Gum Surgery", "url": "/gum-surgery" },
+      { "key": "Dental Implants", "url": "/dental-implants" },
+      { "key": "Tooth Restoration", "url": "/tooth-restoration" },
+      { "key": "Dental Sealants", "url": "/dental-sealants" }
+    ]
   },
   
   {
     "key": "Reviews",
-    "url": "/reviews/"
+    "url": "/reviews"
   },
   {
     "key": "Contact",
-    "url": "/contact/"
+    "url": "/contact"
   }
 ]

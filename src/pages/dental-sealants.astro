@@ -1,0 +1,320 @@
+---
+import BaseLayout from "..//layouts/BaseLayout.astro";
+import CTA from "../components/CTA.astro";
+import Landing from "../components/Landing.astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import {getOptimizedImage} from "../js/utils"
+import landingImage from "../assets/images/dentist-clinic.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+const optimizedImage = await getOptimizedImage(landingImage)
+---
+
+<BaseLayout
+  title="Dental Sealants"
+  description="Learn About Our Dental Sealants Services"
+  preloadedImage = {optimizedImage}
+>
+
+
+<Landing 
+title="Dental Sealants"
+image={optimizedImage}
+/>
+   <!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-870">
+  <div class="cs-container">
+    <!-- Image Wrapper for Stacking -->
+    <div class="cs-images-wrapper">
+      <!-- First Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/blue-dental.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/blue-dental.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/blue-dental.jpg"
+          alt="golf coaching"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+      <!-- Second Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/closeup-dental.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/closeup-dental.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/closeup-dental.jpg"
+          alt="roof installation"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+       <!-- Second Image -->
+       <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/dental-kid.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/dental-kid.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/dental-kid.jpg"
+          alt="dental kid"
+          width="630"
+          height="775"
+        >
+      </picture>
+    </div>
+
+<!-- Content Section -->
+<!-- Content Section -->
+<div class="cs-content">
+  <span class="cs-topper">Featured Service</span>
+  <h2 class="cs-title">Dental Sealants</h2>
+  <p class="cs-text">
+    Protect your smile with our specialized dental sealant services in London. Dental sealants are a simple and effective preventive treatment that protects your teeth from cavities by creating a protective barrier over their chewing surfaces. This treatment is ideal for both children and adults seeking long-term protection for their oral health.
+  </p>
+
+  <h3>Why Choose Our Dental Sealant Services?</h3>
+  <ul>
+    <li><strong>Expertise in Preventive Dentistry:</strong> Our dental team has years of experience in applying dental sealants, ensuring the procedure is quick, comfortable, and highly effective. We use proven techniques tailored to your individual needs, focusing on cavity prevention and long-term oral health.</li>
+    <li><strong>Advanced Application Techniques:</strong> We utilize the latest dental materials and methods to guarantee the sealants bond securely to your teeth, offering durable and reliable protection. Our process ensures that every treated tooth is fully covered for optimal defense against decay.</li>
+    <li><strong>Patient-Centered Approach:</strong> We prioritize your comfort and understanding throughout the process. From educating you on the benefits of sealants to providing a pain-free application, we ensure a positive and reassuring experience for both children and adults.</li>
+  </ul>
+
+  <h3>Our Dental Sealant Services</h3>
+  <h4>Professional Cleaning</h4>
+  <p class="cs-text">
+    Before applying the sealant, we ensure the teeth are clean and free of plaque or debris. This step is critical to ensure the sealant adheres properly to the enamel, offering maximum protection.
+  </p>
+
+  <h4>Sealant Application</h4>
+  <p class="cs-text">
+    Our sealant application process is precise and efficient:
+    <ul>
+      <li><strong>Tooth Preparation:</strong> The surface of the tooth is cleaned and dried.</li>
+      <li><strong>Etching:</strong> A special solution is applied to slightly roughen the enamel, helping the sealant adhere securely.</li>
+      <li><strong>Sealant Placement:</strong> The liquid sealant is carefully painted onto the tooth’s grooves, flowing into hard-to-reach areas.</li>
+      <li><strong>Curing:</strong> A specialized curing light hardens the sealant, creating a durable shield against decay.</li>
+    </ul>
+  </p>
+
+  <h4>Ongoing Monitoring and Maintenance</h4>
+  <p class="cs-text">
+    During regular check-ups, we monitor the condition of the sealants and reapply them if necessary. Sealants are designed to last several years but may require touch-ups to ensure continuous protection.
+  </p>
+
+  <h3>Benefits of Dental Sealants</h3>
+  <p class="cs-text">
+    <ul>
+      <li><strong>Effective Decay Prevention:</strong> Sealants protect teeth by blocking food particles and bacteria from settling in the grooves and pits of molars, where cavities are most likely to develop.</li>
+      <li><strong>Quick and Painless:</strong> The procedure is non-invasive and completed in minutes, making it a stress-free experience for children and adults alike.</li>
+      <li><strong>Cost-Effective:</strong> By preventing cavities, sealants save you money in the long term by reducing the need for fillings or more extensive dental work.</li>
+    </ul>
+  </p>
+
+  <h4>Sealant Application Process</h4>
+  <p class="cs-text">
+    <ul>
+      <li><strong>Evaluation:</strong> We assess the condition of your teeth and recommend sealants if appropriate.</li>
+      <li><strong>Preparation:</strong> Teeth are cleaned and dried, and an etching solution is applied to the enamel.</li>
+      <li><strong>Application:</strong> The sealant material is carefully painted onto the tooth surface.</li>
+      <li><strong>Curing:</strong> A curing light hardens the sealant to form a protective barrier.</li>
+      <li><strong>Final Check:</strong> Each tooth is inspected to ensure the sealant is securely in place.</li>
+    </ul>
+  </p>
+
+  <p class="cs-text">
+    We offer flexible appointment scheduling, including evenings and weekends, to accommodate your busy lifestyle. Our commitment to quality care and affordable treatment options ensures that you and your family receive the best in preventive dentistry. Let us help you maintain healthy, cavity-free smiles for years to come.
+  </p>
+
+  <p class="cs-text">
+    Take the first step in protecting your teeth today. Schedule a consultation with our experienced dental team and discover the benefits of dental sealants for you and your family.
+  </p>
+  <a href="/contact" class="cs-button-solid">Contact Us</a>
+</div>
+</div>
+</section>
+
+</section>
+
+
+
+<style>
+  /*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+    #sbs-r-870 .cs-container {
+        width: 100%;
+        max-width: 34.375rem; /* 550px */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    
+    #sbs-r-870 .cs-picture {
+  width: 100%; /* Full width of the parent container */
+  max-width: 39.375rem; /* Maximum width (e.g., 630px) */
+  height: 30.375rem; /* Set height equal to the width to create a square */
+  box-shadow: 0px 2.8px 42px rgba(0, 0, 0, 0.16);
+  border-radius: 5%; /* Fully rounded corners, turning it into a circle */
+  overflow: hidden;
+  align-self: flex-start; /* Ensure the image stays at the top */
+  margin-bottom:7rem; /* Add spacing below the image */
+}
+
+
+    #sbs-r-870 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #sbs-r-870 .cs-content {
+        text-align: left;
+        max-width: 33.875rem; /* 542px */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem; /* Add spacing between elements */
+        padding: 1.5rem; /* Add padding inside the content area */
+    }
+    #sbs-r-870 .cs-content h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Space below headings */
+    }
+    #sbs-r-870 .cs-content h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+    #sbs-r-870 .cs-content p {
+        line-height: 1.8; /* Improve readability */
+        margin-bottom: 1rem; /* Space between paragraphs */
+    }
+    #sbs-r-870 .cs-content ul {
+        list-style-type: disc; /* Add bullet points */
+        padding-left: 1.5rem; /* Indent list items */
+        margin-bottom: 1.5rem; /* Space below the list */
+    }
+    #sbs-r-870 .cs-content ul li {
+        margin-bottom: 0.75rem; /* Space between list items */
+    }
+    #sbs-r-870 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem; /* Add spacing above the button */
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    #sbs-r-870 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #sbs-r-870 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+
+    #sbs-r-870 .cs-container {
+        flex-direction: row; /* Preserve side-by-side layout for content */
+        max-width: 80rem; /* 1280px */
+        justify-content: space-between;
+        align-items: flex-start; /* Align everything to the top */
+    }
+
+    #sbs-r-870 .cs-images-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        width: 47%; /* Ensure images wrapper occupies the same space as before */
+        gap: 5.6rem; /* Maintain spacing between stacked images */
+        align-self: flex-start; /* Ensure the images wrapper starts at the top */
+    }
+
+    #sbs-r-870 .cs-content {
+        width: 53%; /* Retain content width */
+        padding: 0;
+        order: 1; /* Move content to the right */
+    }
+
+    #sbs-r-870 .cs-picture {
+        width: 100%; /* Ensure images fill the wrapper */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #sbs-r-870 .cs-picture img {
+        display: block; /* Prevent inline spacing issues */
+        width: 100%; /* Ensure image takes full width of its container */
+        height: auto; /* Maintain natural aspect ratio */
+        object-fit: cover; /* Ensure content fits within the container */
+    }
+}
+
+
+
+</style>
+
+
+                              
+
+ 
+             
+
+
+
+
+
+
+                              
+                              
+
+</BaseLayout>

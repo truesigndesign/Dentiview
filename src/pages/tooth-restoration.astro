@@ -1,0 +1,309 @@
+---
+import BaseLayout from "..//layouts/BaseLayout.astro";
+import CTA from "../components/CTA.astro";
+import Landing from "../components/Landing.astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import {getOptimizedImage} from "../js/utils"
+import landingImage from "../assets/images/dentist-clinic.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+const optimizedImage = await getOptimizedImage(landingImage)
+---
+
+<BaseLayout
+  title="Tooth Restoration"
+  description="Learn About Our Tooth Resstoration Services"
+  preloadedImage = {optimizedImage}
+>
+  <!-- ============================================ -->
+  <!--                    LANDING                   -->
+  <!-- ============================================ -->
+
+  <Landing 
+    title="Tooth Restoration"
+    image={optimizedImage}
+  />
+
+   <!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-870">
+  <div class="cs-container">
+    <!-- Image Wrapper for Stacking -->
+    <div class="cs-images-wrapper">
+      <!-- First Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/dentist-in-white.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/dentist-in-white.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/dentist-in-white.jpg"
+          alt="golf coaching"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+      <!-- Second Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/woman-dentist.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/woman-dentist.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/woman-dentist.jpg"
+          alt="roof installation"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+       <!-- Second Image -->
+       <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/dentist-green.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/dentist-green.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/dentist-green.jpg"
+          alt="golf coaching"
+          width="630"
+          height="775"
+        >
+      </picture>
+    </div>
+
+<!-- Content Section -->
+<div class="cs-content">
+  <span class="cs-topper">Featured Service</span>
+  <h2 class="cs-title">Tooth Restoration</h2>
+  <p class="cs-text">
+    Rediscover your confident smile with our comprehensive tooth restoration services. Whether you're dealing with decay, chips, cracks, or missing teeth, our dedicated team is committed to restoring both the function and aesthetics of your teeth, ensuring you can smile, eat, and speak with assurance.
+  </p>
+
+  <h3>Why Choose Our Tooth Restoration Services?</h3>
+  <ul>
+    <li><strong>Expertise in Restorative Dentistry:</strong> Our dental professionals possess extensive experience in restorative procedures, offering personalized treatment plans tailored to your unique needs. From minor repairs to complex restorations, we ensure precision and care in every service.</li>
+    <li><strong>Advanced Technology:</strong> We employ state-of-the-art equipment, including digital imaging and CEREC® technology, to provide accurate diagnostics and efficient, high-quality restorations. This approach allows for same-day crowns and minimizes the number of visits required, enhancing your convenience.</li>
+    <li><strong>Comprehensive Patient Care:</strong> From the initial consultation to post-treatment follow-up, we offer a seamless and supportive patient experience. Our team prioritises your comfort and satisfaction, ensuring you are well-informed and at ease throughout your treatment journey.</li>
+  </ul>
+
+  <h3>Our Tooth Restoration Services</h3>
+  <h4>Dental Fillings</h4>
+  <p class="cs-text">
+    Address cavities and minor tooth damage with our durable, tooth-colored composite fillings that blend seamlessly with your natural teeth. Our minimally invasive approach preserves as much of your natural tooth structure as possible, promoting long-term oral health.
+  </p>
+
+  <h4>Inlays and Onlays</h4>
+  <p class="cs-text">
+    For damage too extensive for standard fillings, we offer custom-made porcelain inlays and onlays that restore the tooth's integrity and appearance. These restorations are crafted to fit the exact contours of your tooth, providing a durable and aesthetically pleasing solution.
+  </p>
+
+  <h4>Dental Crowns</h4>
+  <p class="cs-text">
+    Protect and strengthen weakened or damaged teeth with our custom-crafted crowns, designed to match the color and shape of your natural teeth. Crowns cover the entire visible portion of the tooth, restoring its function and appearance while providing long-lasting durability.
+  </p>
+
+  <h4>Dental Bridges</h4>
+  <p class="cs-text">
+    Replace one or more missing teeth with our custom-made bridges, restoring the natural contour of your teeth and your bite. Bridges are anchored to adjacent teeth or implants, providing a stable and lasting solution for tooth loss.
+  </p>
+
+  <h4>Dentures</h4>
+  <p class="cs-text">
+    For multiple missing teeth, we provide full and partial dentures that are comfortable, functional, and aesthetically pleasing. Our dentures are custom-fitted to ensure a secure fit and natural appearance, enhancing your ability to chew and speak effectively.
+  </p>
+
+  <h4>Root Canal Therapy</h4>
+  <p class="cs-text">
+    Save infected or severely decayed teeth with our root canal treatments, eliminating pain and preventing the need for extraction. This procedure involves removing the infected pulp, cleaning the root canals, and sealing them to prevent reinfection, preserving your natural tooth.
+  </p>
+
+  <h4>Periodontal (Gum) Therapy</h4>
+  <p class="cs-text">
+    Treat gum disease effectively to restore the health of your gums and support the longevity of your restorations. Our periodontal treatments include scaling and root planing, as well as advanced therapies to address various stages of gum disease, ensuring a healthy foundation for your teeth.
+  </p>
+
+  <h4>Aftercare and Maintenance</h4>
+  <p class="cs-text">
+    We provide guidance on maintaining your restorations and schedule follow-up appointments to monitor your oral health. Regular check-ups and proper oral hygiene practices are essential to ensure the longevity of your restorations.
+  </p>
+
+  <p class="cs-text">
+    Achieve your ideal smile with flexible scheduling options, including weekend appointments. Our financing plans make high-quality tooth restoration services accessible to all patients. Trust our experienced team to deliver exceptional care and results, helping you achieve a healthy, beautiful smile.
+  </p>
+
+  <p class="cs-text">
+    Take the first step toward restoring your smile by scheduling a consultation with our dental experts today. Let us provide you with personalised, innovative care that meets your unique needs and exceeds your expectations.
+  </p>
+  <a href="/contact" class="cs-button-solid">Contact Us</a>
+</div>
+</div>
+</section>
+
+</section>
+
+
+
+<style>
+  /*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+    #sbs-r-870 .cs-container {
+        width: 100%;
+        max-width: 34.375rem; /* 550px */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    
+    #sbs-r-870 .cs-picture {
+  width: 100%; /* Full width of the parent container */
+  max-width: 39.375rem; /* Maximum width (e.g., 630px) */
+  height: 39.375rem; /* Set height equal to the width to create a square */
+  box-shadow: 0px 2.8px 42px rgba(0, 0, 0, 0.16);
+  border-radius: 5%; /* Fully rounded corners, turning it into a circle */
+  overflow: hidden;
+  align-self: flex-start; /* Ensure the image stays at the top */
+  margin-bottom:7rem; /* Add spacing below the image */
+}
+
+
+    #sbs-r-870 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #sbs-r-870 .cs-content {
+        text-align: left;
+        max-width: 33.875rem; /* 542px */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem; /* Add spacing between elements */
+        padding: 1.5rem; /* Add padding inside the content area */
+    }
+    #sbs-r-870 .cs-content h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Space below headings */
+    }
+    #sbs-r-870 .cs-content h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+    #sbs-r-870 .cs-content p {
+        line-height: 1.8; /* Improve readability */
+        margin-bottom: 1rem; /* Space between paragraphs */
+    }
+    #sbs-r-870 .cs-content ul {
+        list-style-type: disc; /* Add bullet points */
+        padding-left: 1.5rem; /* Indent list items */
+        margin-bottom: 1.5rem; /* Space below the list */
+    }
+    #sbs-r-870 .cs-content ul li {
+        margin-bottom: 0.75rem; /* Space between list items */
+    }
+    #sbs-r-870 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem; /* Add spacing above the button */
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    #sbs-r-870 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #sbs-r-870 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+
+    #sbs-r-870 .cs-container {
+        flex-direction: row; /* Preserve side-by-side layout for content */
+        max-width: 80rem; /* 1280px */
+        justify-content: space-between;
+        align-items: flex-start; /* Align everything to the top */
+    }
+
+    #sbs-r-870 .cs-images-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        width: 47%; /* Ensure images wrapper occupies the same space as before */
+        gap: 5.6rem; /* Maintain spacing between stacked images */
+        align-self: flex-start; /* Ensure the images wrapper starts at the top */
+    }
+
+    #sbs-r-870 .cs-content {
+        width: 53%; /* Retain content width */
+        padding: 0;
+        order: 1; /* Move content to the right */
+    }
+
+    #sbs-r-870 .cs-picture {
+        width: 100%; /* Ensure images fill the wrapper */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #sbs-r-870 .cs-picture img {
+        display: block; /* Prevent inline spacing issues */
+        width: 100%; /* Ensure image takes full width of its container */
+        height: auto; /* Maintain natural aspect ratio */
+        object-fit: cover; /* Ensure content fits within the container */
+    }
+}
+
+
+
+</style>
+                              
+                              
+
+</BaseLayout>

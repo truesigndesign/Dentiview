@@ -283,7 +283,251 @@ const optimizedImage = await getOptimizedImage(landingImage)
 </script>
 
 
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
+<section id="services-1975">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Dental Care For Everyone</span>
+          <h2 class="cs-title">Explore Our Services</h2>
+          <p class="cs-text">
+            Discover some of the wide range of dental services we offer to meet your individual needs, from preventative care to specialized treatments
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Gum Surgery</h3>
+                  <p class="cs-item-text">
+                    Effective treatments to naddress gum disease and improve oral health, ensuring your gums are strong and healthy.
+                  </p>
+              </div>
+              <a href="/gum-surgery" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/toothache.png" alt="icon"
+                  width="181" height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Dental Implants</h3>
+                  <p class="cs-item-text">
+                    Durable and natural-looking solutions to replace missing teeth, restoring both functionality and confidence in your smile.
+                  </p>
+              </div>
+              <a href="/dental-implants" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/implant.png" alt="icon" width="181"
+                  height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Tooth Restoration</h3>
+                  <p class="cs-item-text">
+                    Expert solutions to restore chipped or broken teeth, helping you regain comfort and appearance.
+                  </p>
+              </div>
+              <a href="/tooth-restoration" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gums.png" alt="icon"
+                  width="181" height="102">
+              </picture>
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex">
+                  <h3 class="cs-h3">Dental Sealants</h3>
+                  <p class="cs-item-text">
+                    A protective coating applied to teeth to prevent cavities and maintain long-lasting oral health
+                  </p>
+              </div>
+              <a href="/dental-sealants" class="cs-link">
+                  Learn More
+              </a>
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/teeth.png" alt="icon" width="181"
+                  height="102">
+              </picture>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1975 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+  }
+  #services-1975::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1975 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1975 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1975 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1975 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    /* 16px - 32px */
+    padding: clamp(1rem, 4vw, 2rem);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+  }
+  #services-1975 .cs-item:hover {
+    border-color: var(--primary);
+  }
+  #services-1975 .cs-item:hover .cs-h3 {
+    color: var(--secondary);
+  }
+  #services-1975 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #services-1975 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-1975 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-1975 .cs-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-top: auto;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #services-1975 .cs-picture {
+    margin: 2rem 0 0 0;
+    padding: 3.625rem 0 0 7.1875rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  #services-1975 .cs-picture:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1975 .cs-picture img {
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+    display: flex;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1975 .cs-content {
+    width: 55%;
+  }
+  #services-1975 .cs-item {
+    grid-column: span 6;
+  }
+  #services-1975 .cs-picture {
+    padding: 2.3125rem 0 0 6.1875rem;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #services-1975 .cs-item {
+    grid-column: span 3;
+  }
+  #services-1975 .cs-picture {
+    padding: 2.3125rem 0 0 3.75rem;
+  }
+}
+                                
+</style>
 
 
 
@@ -585,251 +829,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
 
 
 
-<!-- ============================================ -->
-<!--                  Services                    -->
-<!-- ============================================ -->
 
-<section id="services-1975">
-  <div class="cs-container">
-      <div class="cs-content">
-          <span class="cs-topper">Dental Care For Everyone</span>
-          <h2 class="cs-title">Explore Our Services</h2>
-          <p class="cs-text">
-            Discover some of the wide range of dental services we offer to meet your individual needs, from preventative care to specialized treatments
-          </p>
-      </div>
-      <ul class="cs-card-group">
-          <li class="cs-item">
-              <div class="cs-flex">
-                  <h3 class="cs-h3">Gum Surgery</h3>
-                  <p class="cs-item-text">
-                    Effective treatments to naddress gum disease and improve oral health, ensuring your gums are strong and healthy.
-                  </p>
-              </div>
-              <a href="#faq-326" class="cs-link">
-                  Learn More
-              </a>
-              <picture class="cs-picture">
-                  <img loading="lazy" decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/toothache.png" alt="icon"
-                  width="181" height="102">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <div class="cs-flex">
-                  <h3 class="cs-h3">Dental Implants</h3>
-                  <p class="cs-item-text">
-                    Durable and natural-looking solutions to replace missing teeth, restoring both functionality and confidence in your smile.
-                  </p>
-              </div>
-              <a href="#faq-326" class="cs-link">
-                  Learn More
-              </a>
-              <picture class="cs-picture">
-                  <img loading="lazy" decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/implant.png" alt="icon" width="181"
-                  height="102">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <div class="cs-flex">
-                  <h3 class="cs-h3">Tooth Restoration</h3>
-                  <p class="cs-item-text">
-                    Expert solutions to restore chipped or broken teeth, helping you regain comfort and appearance.
-                  </p>
-              </div>
-              <a href="#faq-326" class="cs-link">
-                  Learn More
-              </a>
-              <picture class="cs-picture">
-                  <img loading="lazy" decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gums.png" alt="icon"
-                  width="181" height="102">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <div class="cs-flex">
-                  <h3 class="cs-h3">Dental Sealants</h3>
-                  <p class="cs-item-text">
-                    A protective coating applied to teeth to prevent cavities and maintain long-lasting oral health
-                  </p>
-              </div>
-              <a href="#faq-326" class="cs-link">
-                  Learn More
-              </a>
-              <picture class="cs-picture">
-                  <img loading="lazy" decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/teeth.png" alt="icon" width="181"
-                  height="102">
-              </picture>
-          </li>
-      </ul>
-  </div>
-</section>
-
-<style>
-  /*-- -------------------------- -->
-<---         Services           -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-1975 {
-    padding: var(--sectionPadding);
-    overflow: hidden;
-    position: relative;
-  }
-  #services-1975::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1975 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-1975 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #services-1975 .cs-card-group {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
-  }
-  #services-1975 .cs-item {
-    text-align: left;
-    list-style: none;
-    width: 100%;
-    margin: 0 auto;
-    /* prevents padding and border from affecting height and width */
-    /* 16px - 32px */
-    padding: clamp(1rem, 4vw, 2rem);
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    grid-column: span 12;
-    grid-row: span 1;
-    position: relative;
-    z-index: 1;
-    transition: border-color 0.3s;
-  }
-  #services-1975 .cs-item:hover {
-    border-color: var(--primary);
-  }
-  #services-1975 .cs-item:hover .cs-h3 {
-    color: var(--secondary);
-  }
-  #services-1975 .cs-flex {
-    display: flex;
-    flex-direction: column;
-  }
-  #services-1975 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-    transition: color 0.3s;
-  }
-  #services-1975 .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-    margin-bottom: 1.5rem;
-    padding: 0;
-    color: var(--bodyTextColor);
-  }
-  #services-1975 .cs-link {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    text-decoration: none;
-    max-width: fit-content;
-    margin-top: auto;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  #services-1975 .cs-picture {
-    margin: 2rem 0 0 0;
-    padding: 3.625rem 0 0 7.1875rem;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  #services-1975 .cs-picture:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1975 .cs-picture img {
-    width: 100%;
-    height: auto;
-    max-width: max-content;
-    display: flex;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-1975 .cs-content {
-    width: 55%;
-  }
-  #services-1975 .cs-item {
-    grid-column: span 6;
-  }
-  #services-1975 .cs-picture {
-    padding: 2.3125rem 0 0 6.1875rem;
-  }
-}
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #services-1975 .cs-item {
-    grid-column: span 3;
-  }
-  #services-1975 .cs-picture {
-    padding: 2.3125rem 0 0 3.75rem;
-  }
-}
-                                
-</style>
 
   <!-- ============================================ -->
 <!--                     Quote                    -->
@@ -840,7 +840,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
       <div class="cs-content">
           <span class="cs-topper">Our Commitment</span>
           <p class="cs-quote">
-              At DentalEZ, we combine advanced dental technology with compassionate care to create healthy smiles that last. From routine cleanings to complex procedures, our experienced team is dedicated to ensuring your comfort and achieving the results you desire.
+              At Dentiview, we combine advanced dental technology with compassionate care to create healthy smiles that last. From routine cleanings to complex procedures, our experienced team is dedicated to ensuring your comfort and achieving the results you desire.
           </p>
           <span class="cs-name">Oliver Harrington</span>
           <span class="cs-job">Clinical Director</span>
@@ -1152,7 +1152,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
       <ul class="cs-card-group">
           <li class="cs-item">
               <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/green-calendar2.svg" alt="link" width="20" height="20" loading="lazy" decoding="async">
-              <h3 class="cs-h3">Book Appointment</h3>
+              <h3 class="cs-h3">Contact Us</h3>
               <p class="cs-item-text">
                 Book your appointment easily and take the first step toward excellent dental care
               </p>
@@ -1368,7 +1368,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                       </span>
                   </button>
                   <p class="cs-item-p">
-                    At DentalEZ, we provide a wide range of dental care to meet all your needs. From routine cleanings and checkups to advanced restorative treatments like dental implants and gum surgery, we have you covered. We also offer cosmetic dentistry, including teeth whitening and solutions for chipped or broken teeth, as well as orthodontic services like traditional braces for teeth alignment.
+                    At Dentiview, we provide a wide range of dental care to meet all your needs. From routine cleanings and checkups to advanced restorative treatments like dental implants and gum surgery, we have you covered. We also offer cosmetic dentistry, including teeth whitening and solutions for chipped or broken teeth, as well as orthodontic services like traditional braces for teeth alignment.
                   </p>
               </li>
               <li class="cs-faq-item">
@@ -1388,7 +1388,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
                       </span>
                   </button>
                   <p class="cs-item-p">
-                    Yes! DentalEZ works with most major dental insurance providers to ensure your care is accessible and affordable. If you're unsure about your coverage, feel free to contact us, and we'll help verify your insurance benefits. For those without insurance, we also offer flexible payment options and financing plans.
+                    Yes! Dentiview works with most major dental insurance providers to ensure your care is accessible and affordable. If you're unsure about your coverage, feel free to contact us, and we'll help verify your insurance benefits. For those without insurance, we also offer flexible payment options and financing plans.
                   </p>
               </li>
               <li class="cs-faq-item">
@@ -1601,7 +1601,7 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
               <div class="wrapper">
                   <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
                   <p class="cs-review">
-                    DentalEZ provided an exceptional experience from start to finish. The staff were incredibly friendly and made me feel comfortable right away. Their expertise and attention to detail gave me confidence in every step of my treatment
+                    Dentiview provided an exceptional experience from start to finish. The staff were incredibly friendly and made me feel comfortable right away. Their expertise and attention to detail gave me confidence in every step of my treatment
                   </p>
               </div>
               <!--Quote Icon-->
@@ -1620,7 +1620,7 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
               <div class="wrapper">
                   <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
                   <p class="cs-review">
-                    My experience at DentalEZ was nothing short of amazing. The team was so warm and welcoming, and they took the time to explain everything in detail, making me feel completely at ease. 
+                    My experience at Dentiview was nothing short of amazing. The team was so warm and welcoming, and they took the time to explain everything in detail, making me feel completely at ease. 
                   </p>
               </div>
               <!--Quote Icon-->

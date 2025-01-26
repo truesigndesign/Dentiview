@@ -1,0 +1,314 @@
+---
+import BaseLayout from "..//layouts/BaseLayout.astro";
+import CTA from "../components/CTA.astro";
+import Landing from "../components/Landing.astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import {getOptimizedImage} from "../js/utils"
+import landingImage from "../assets/images/dentist-clinic.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+const optimizedImage = await getOptimizedImage(landingImage)
+---
+
+<BaseLayout
+  title="Dental Implants"
+  description="Learn About Our Dental Implant Services"
+  preloadedImage = {optimizedImage}
+>
+
+<Landing 
+title="Dental Implants"
+image={optimizedImage}
+/>
+     <!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-870">
+  <div class="cs-container">
+    <!-- Image Wrapper for Stacking -->
+    <div class="cs-images-wrapper">
+      <!-- First Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/man-dentist.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/man-dentist.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="assets/images/man-dentist.jpg"
+          alt="golf coaching"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+      <!-- Second Image -->
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/dentist-top-2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/dentist-top-2.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/dentist-top-2.jpg"
+          alt="roof installation"
+          width="630"
+          height="775"
+        >
+      </picture>
+
+       <!-- Second Image -->
+       <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="assets/images/dentist-above.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="assets/images/dentist-above.jpg">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="assets/images/dentist-above.jpg"
+          alt="golf coaching"
+          width="630"
+          height="775"
+        >
+      </picture>
+    </div>
+
+<!-- Content Section -->
+<div class="cs-content">
+  <span class="cs-topper">Featured Service</span>
+  <h2 class="cs-title">Dental Implants</h2>
+  <p class="cs-text">
+    Transform your smile with confidence through our specialized dental implant services. Dental implants are the gold standard in restorative dentistry, offering a permanent and natural-looking solution for missing teeth. Whether replacing a single tooth, multiple teeth, or restoring a full arch, our dedicated team combines cutting-edge technology with tailored care to help you achieve a functional, long-lasting smile.
+  </p>
+
+  <h3>Why Choose Our Dental Implant Services?</h3>
+  <ul>
+    <li><strong>Specialized Implant Expertise:</strong> Our implantologists are recognized experts in their field, bringing years of training and experience to every procedure. From routine cases to complex full-mouth restorations, we deliver superior results with a focus on patient care and precision.</li>
+    <li><strong>Advanced Technology:</strong> We invest in state-of-the-art equipment, including 3D imaging, to ensure the most accurate diagnosis and treatment planning. Our guided surgical techniques guarantee implants are placed with unparalleled accuracy, reducing recovery times and maximizing long-term success.</li>
+    <li><strong>Personalized Treatment Plans:</strong> No two patients are alike, and neither are their smiles. We take the time to understand your needs and goals, creating a customized plan that considers everything from bone structure to aesthetic preferences.</li>
+  </ul>
+
+  <h3>Our Dental Implant Services</h3>
+  <h4>Single Tooth Replacement</h4>
+  <p class="cs-text">
+    Missing a single tooth can affect both function and confidence. Our single-tooth implant services provide a discreet and durable solution:
+    <ul>
+      <li>Comprehensive Consultation: We assess your oral health and recommend the best approach for your replacement.</li>
+      <li>Precise Placement: The titanium implant acts as a root, integrating seamlessly with your jawbone.</li>
+      <li>Crown Restoration: A custom-made crown restores the missing tooth, matching your natural teeth in color, shape, and strength.</li>
+    </ul>
+  </p>
+
+  <h4>Multiple Teeth Replacement</h4>
+  <p class="cs-text">
+    If you’ve lost several teeth, implant-supported bridges or individual crowns can provide a stable, natural-looking restoration:
+    <ul>
+      <li>Strategic Planning: We determine optimal implant positions to provide maximum support.</li>
+      <li>Custom Prosthetics: Bridges or crowns are crafted to blend seamlessly with your existing teeth.</li>
+      <li>Enhanced Function: Restore the ability to chew and speak confidently, backed by a durable and long-lasting solution.</li>
+    </ul>
+  </p>
+
+  <h4>Full Arch Restoration</h4>
+  <p class="cs-text">
+    For patients missing all teeth in an arch, we offer implant-supported dentures for unparalleled stability and aesthetics:
+    <ul>
+      <li>Detailed Imaging and Planning: Our team uses advanced scans to create a detailed treatment map.</li>
+      <li>Implant Placement: Strategic implant placement anchors the entire arch securely.</li>
+      <li>Natural Fit and Feel: The attached prosthetic provides a fully restored, natural-looking smile.</li>
+    </ul>
+  </p>
+
+  <h4>Bone Grafting and Sinus Lifts</h4>
+  <p class="cs-text">
+    For patients with insufficient bone density, we offer preparatory procedures to ensure a strong foundation for implants:
+    <ul>
+      <li>Bone Grafting: Strengthens areas of the jaw to support implants securely.</li>
+      <li>Sinus Lifts: Adds volume to the upper jaw, making implants viable for more patients.</li>
+    </ul>
+  </p>
+
+  <h4>Dental Implant Process</h4>
+  <p class="cs-text">
+    Our dental implant process is designed to ensure exceptional results:
+    <ul>
+      <li><strong>Consultation & Diagnosis:</strong> A comprehensive examination with 3D imaging to evaluate your oral health and bone structure.</li>
+      <li><strong>Customized Treatment Plan:</strong> Detailed planning for the number of implants and type of restoration required.</li>
+      <li><strong>Implant Surgery:</strong> Titanium implants are placed with guided precision under local anesthesia.</li>
+      <li><strong>Healing and Integration:</strong> The implants naturally fuse with the jawbone over time, creating a stable foundation.</li>
+      <li><strong>Final Restoration:</strong> Custom prosthetics are attached to complete your smile transformation.</li>
+    </ul>
+  </p>
+
+  <p class="cs-text">
+    We offer flexible appointment options and financing plans to make dental implants accessible for all patients. With our expertise, state-of-the-art facilities, and commitment to excellence, your journey to a restored smile is in the best hands.
+  </p>
+
+  <p class="cs-text">
+    Take the first step today by scheduling your consultation with our experienced implantologists. Let us help you achieve the smile you’ve always wanted, backed by innovative care and exceptional results.
+  </p>
+  <a href="/contact" class="cs-button-solid">Contact Us</a>
+</div>
+</div>
+</section>
+
+
+
+
+<style>
+  /*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+    #sbs-r-870 .cs-container {
+        width: 100%;
+        max-width: 34.375rem; /* 550px */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    
+    #sbs-r-870 .cs-picture {
+  width: 100%; /* Full width of the parent container */
+  max-width: 39.375rem; /* Maximum width (e.g., 630px) */
+  height: 39.375rem; /* Set height equal to the width to create a square */
+  box-shadow: 0px 2.8px 42px rgba(0, 0, 0, 0.16);
+  border-radius: 5%; /* Fully rounded corners, turning it into a circle */
+  overflow: hidden;
+  align-self: flex-start; /* Ensure the image stays at the top */
+  margin-bottom:7rem; /* Add spacing below the image */
+}
+
+
+    #sbs-r-870 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #sbs-r-870 .cs-content {
+        text-align: left;
+        max-width: 33.875rem; /* 542px */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem; /* Add spacing between elements */
+        padding: 1.5rem; /* Add padding inside the content area */
+    }
+    #sbs-r-870 .cs-content h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Space below headings */
+    }
+    #sbs-r-870 .cs-content h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+    #sbs-r-870 .cs-content p {
+        line-height: 1.8; /* Improve readability */
+        margin-bottom: 1rem; /* Space between paragraphs */
+    }
+    #sbs-r-870 .cs-content ul {
+        list-style-type: disc; /* Add bullet points */
+        padding-left: 1.5rem; /* Indent list items */
+        margin-bottom: 1.5rem; /* Space below the list */
+    }
+    #sbs-r-870 .cs-content ul li {
+        margin-bottom: 0.75rem; /* Space between list items */
+    }
+    #sbs-r-870 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem; /* Add spacing above the button */
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    #sbs-r-870 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #sbs-r-870 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-r-870 {
+        padding: var(--sectionPadding);
+    }
+
+    #sbs-r-870 .cs-container {
+        flex-direction: row; /* Preserve side-by-side layout for content */
+        max-width: 80rem; /* 1280px */
+        justify-content: space-between;
+        align-items: flex-start; /* Align everything to the top */
+    }
+
+    #sbs-r-870 .cs-images-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        width: 47%; /* Ensure images wrapper occupies the same space as before */
+        gap: 5.6rem; /* Maintain spacing between stacked images */
+        align-self: flex-start; /* Ensure the images wrapper starts at the top */
+    }
+
+    #sbs-r-870 .cs-content {
+        width: 53%; /* Retain content width */
+        padding: 0;
+        order: 1; /* Move content to the right */
+    }
+
+    #sbs-r-870 .cs-picture {
+        width: 100%; /* Ensure images fill the wrapper */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #sbs-r-870 .cs-picture img {
+        display: block; /* Prevent inline spacing issues */
+        width: 100%; /* Ensure image takes full width of its container */
+        height: auto; /* Maintain natural aspect ratio */
+        object-fit: cover; /* Ensure content fits within the container */
+    }
+}
+
+
+
+</style>                         
+                              
+
+</BaseLayout>
